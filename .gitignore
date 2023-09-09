@@ -1,0 +1,15 @@
+# For Jekyll
+/.jekyll-metadata
+/.jekyll-cache
+/_site
+
+# For html-proofer
+tmp
+
+# For Ruby bundler
+vendor/
+.bundle/
+
+# For Lightning Sites
+BUILD/
+BACKUPS/
