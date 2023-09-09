@@ -1,86 +1,128 @@
+﻿<!doctype html>
+<html>
+<head>
+ <title>Jasper Picture of the Day</title>
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>My First Website About Horses</title>
-  </head>
+ <script>
+  let date = new Date()
+  window.onload = function() {
+   let long_date = date.toDateString()
+   const urlParams = new URLSearchParams(window.location.search);
+   if (urlParams.get("d") == null) {
+    date = {"d": Number("" + date.getMonth() + date.getDate()), "y": date.getFullYear()}
+   } else {
+    date = {"d": urlParams.get("d"), "y": urlParams.get("y")}
+   }
+   let image = "image/" + date.get("y") + "/" + date.get("d")
+   let alt = "image/" + date.get("y") + "/alt.json"
+   document.getElementById("date").innerHTML = long_date;
+   document.getElementById("img").href = image
+   document.getElementById("img").alt = alt
+  }
+ </script>
+</head>
 
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container">
-        <h1 class="navbar-brand mb-0">My First Website About Horses</h1>
-      </div>
-    </nav>
+<body BGCOLOR="#F4F4FF" text="#000000" link="#0000FF" vlink="#7F0F9F" alink="#FF0000">
 
-    <section class="jumbotron text-center">
-      <div class="container">
-        <h1 class="jumbotron-heading">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-        <p>
-          <a href="/" class="btn btn-primary">Main call to action</a>
-          <a href="/" class="btn btn-outline-secondary bg-white">Secondary action</a>
-        </p>
-      </div>
-    </section>
+ <h1> Jasper Picture of the Day </h1>
+ <p>Every day, I upload a picture of my cat being silly.</p>
 
-    <div class="album text-muted">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <img src="https://placehold.it/350x150" alt="Card image cap">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="col">
-            <img src="https://placehold.it/350x150" alt="Card image cap">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img src="https://placehold.it/350x150" alt="Card image cap">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="col">
-            <img src="https://placehold.it/350x150" alt="Card image cap">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="col">
-            <img src="https://placehold.it/350x150" alt="Card image cap">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="col">
-            <img src="https://placehold.it/350x150" alt="Card image cap">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img src="https://placehold.it/350x150" alt="Card image cap">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="col">
-            <img src="https://placehold.it/350x150" alt="Card image cap">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="col">
-            <img src="https://placehold.it/350x150" alt="Card image cap">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
+ <h3 id="date"></h3>
+ <a id="link">
+<IMG id="img" style="max-width:100%"></a>
+</center>
 
-      </div>
-    </div>
+<center>
+<b> Comet Nishimura Grows </b> <br> 
+<b> Credit & Copyright: </b> 
+<a href="https://www.instagram.com/kennettphotography/">Peter Kennett</a>
+</center> <p> 
 
-    <hr>
-    <footer class="text-muted">
-      <div class="container">
-        <p>This web page was made with love and admiration by A Horse Lover.</p>
-      </div>
-    </footer>
-  </body>
+<b> Explanation: </b> 
+Comet Nishimura is growing.
+
+More precisely, the tails 
+<a href="https://en.wikipedia.org/wiki/C/2023_P1_(Nishimura)">C/2023 P1 (Nishimura)</a> 
+are growing as it nears the Sun.
+
+Discovered only last month, the 
+<a href="https://spaceplace.nasa.gov/comets/en/">comet</a> is already near 
+naked eye brightness as it now moves inside the Earth's orbit. 
+
+The comet will be nearest the 
+<a href="https://solarsystem.nasa.gov/planets/earth/overview/"
+>Earth</a> next week, but nearest the Sun the week after -- on September 17. 
+
+Speculation holds that expelled ice and dust from 
+<a href="ap230821.html">Comet Nishimura</a>'s last visit to the inner 
+<a href="https://solarsystem.nasa.gov/solar-system/our-solar-system/in-depth/"
+>Solar System</a> may have created the 
+<a href="https://en.wikipedia.org/wiki/Sigma_Hydrids">Sigma Hydrids</a> 
+meteor shower which peaks yearly in December. 
+
+If so, then this 
+<a href="ap180808.html">meteor shower</a> may become more active,
+<a href=" https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy80MTY0MTI3L29yaWdpbi5qcGciLCJleHBpcmVzX2F0IjoxNzA1Mzg5MjY1fQ.6M9vsWms-VGr9rPN1WvxANS2gjpEtNTYtBqtc4CDEZ8/img.jpg"
+>refreshed</a> with new 
+<a href="ap171106.html">comet debris</a>.
+
+<a href="https://www.facebook.com/media/set/?set=a.287149497346968&type=3"
+>Pictured, Comet Nishimura</a> was captured from 
+<a href="https://en.wikipedia.org/wiki/Edgewood,_New_Mexico"
+>Edgewood</a>, 
+<a href="https://en.wikipedia.org/wiki/New_Mexico">New Mexico</a>, 
+<a href="https://en.wikipedia.org/wiki/United_States">USA</a> 
+four nights ago, showing a long ion tail structured by interactions with the 
+<a href="https://solarsystem.nasa.gov/resources/2288/the-solar-wind-across-our-solar-system/"
+>Sun's wind</a>.
+
+Look for <a href="https://earthsky.org/tonight/new-comet-c-2023-p1-nishimura-bright-august-september-october-2023/">this comet</a> near your 
+eastern horizon just before sunrise for the next few mornings, 
+but very near your 
+western horizon just after sunset next week -- as its coma 
+<a href="http://www.aerith.net/comet/catalog/2023P1/2023P1.html"
+>continues to brighten</a> and its 
+<a href="ap131117.html">tails continue</a> to grow. 
+
+
+<p> <center> 
+<b> Gallery: </b>
+<a href="https://www.facebook.com/media/set/?set=a.287149497346968&type=3"
+>Selected Comet Nishimura images submitted to APOD</a>
+<br>
+<b> Tomorrow's picture: </b>person, moon, sun 
+
+<p> <hr>
+<a href="ap230908.html">&lt;</a>
+| <a href="archivepix.html">Archive</a>
+| <a href="lib/apsubmit2015.html">Submissions</a> 
+| <a href="lib/aptree.html">Index</a>
+| <a href="https://antwrp.gsfc.nasa.gov/cgi-bin/apod/apod_search">Search</a>
+| <a href="calendar/allyears.html">Calendar</a>
+| <a href="/apod.rss">RSS</a>
+| <a href="lib/edlinks.html">Education</a>
+| <a href="lib/about_apod.html">About APOD</a>
+| <a href=
+"https://asterisk.apod.com/discuss_apod.php?date=230909">Discuss</a>
+| <a href="ap230910.html">&gt;</a>
+
+<hr><p>
+<b> Authors & editors: </b>
+<a href="http://www.phy.mtu.edu/faculty/Nemiroff.html">Robert Nemiroff</a>
+(<a href="http://www.phy.mtu.edu/">MTU</a>) &
+<a href="https://antwrp.gsfc.nasa.gov/htmltest/jbonnell/www/bonnell.html"
+>Jerry Bonnell</a> (<a href="http://www.astro.umd.edu/">UMCP</a>)<br>
+<b>NASA Official: </b> Phillip Newman
+<a href="lib/about_apod.html#srapply">Specific rights apply</a>.<br>
+<a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">NASA Web
+Privacy Policy and Important Notices</a><br>
+<b>A service of:</b>
+<a href="https://astrophysics.gsfc.nasa.gov/">ASD</a> at
+<a href="https://www.nasa.gov/">NASA</a> /
+<a href="https://www.nasa.gov/centers/goddard/">GSFC</a>,
+<br> <a href="https://science.nasa.gov/learners">NASA Science Activation</a>
+<br><b>&</b> <a href="http://www.mtu.edu/">Michigan Tech. U.</a><br>
+
+</body>
 </html>
+
