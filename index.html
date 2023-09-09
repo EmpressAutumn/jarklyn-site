@@ -1,23 +1,22 @@
 ﻿<!doctype html>
-<html>
+<html lang="en">
 <head>
  <title>Jasper Picture of the Day</title>
 
  <script>
-  let date = new Date()
   window.onload = function() {
-   let long_date = date.toDateString()
-   const urlParams = new URLSearchParams(window.location.search);
-   if (urlParams.get("d") == null) {
-    date = {"d": Number("" + date.getMonth() + date.getDate()), "y": date.getFullYear()}
-   } else {
-    date = {"d": urlParams.get("d"), "y": urlParams.get("y")}
-   }
-   let image = "image/" + date.get("y") + "/" + date.get("d")
-   let alt = "image/" + date.get("y") + "/alt.json"
-   document.getElementById("date").innerHTML = long_date;
-   document.getElementById("img").href = image
-   document.getElementById("img").alt = alt
+   let date = new Date()
+   let folder = "image/" + date.getFullYear() + "/"
+   let day = pad(date.getMonth() + 1) + pad(date.getDate())
+   document.getElementById("date").innerHTML = date.toDateString();
+   document.getElementById("img").src = folder + "/" + day + ".jpg";
+   document.getElementById("img").alt = image;
+   document.getElementById("title").innerHTML = title;
+  }
+  function pad(num) {
+   num = num.toString();
+   while (num.length < 2) num = "0" + num;
+   return num;
   }
  </script>
 </head>
@@ -28,15 +27,14 @@
  <p>Every day, I upload a picture of my cat being silly.</p>
 
  <h3 id="date"></h3>
- <a id="link">
-<IMG id="img" style="max-width:100%"></a>
-</center>
+ <a id="link"><IMG id="img" style="max-width:100%"></a>
 
-<center>
-<b> Comet Nishimura Grows </b> <br> 
+
+
+<b id="title"></b> <br>
 <b> Credit & Copyright: </b> 
 <a href="https://www.instagram.com/kennettphotography/">Peter Kennett</a>
-</center> <p> 
+<p>
 
 <b> Explanation: </b> 
 Comet Nishimura is growing.
@@ -85,7 +83,7 @@ western horizon just after sunset next week -- as its coma
 <a href="ap131117.html">tails continue</a> to grow. 
 
 
-<p> <center> 
+<p>
 <b> Gallery: </b>
 <a href="https://www.facebook.com/media/set/?set=a.287149497346968&type=3"
 >Selected Comet Nishimura images submitted to APOD</a>
