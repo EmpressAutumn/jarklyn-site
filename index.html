@@ -12,28 +12,35 @@
     date.setMonth(Number(GET["d"].substring(4, 6)) - 1)
     date.setDate(Number(GET["d"].substring(6, 8)))
    }
-
    let day = pad(date.getMonth() + 1) + pad(date.getDate())
    let folder = "image/" + date.getFullYear() + "/"
-   document.getElementById("date").innerHTML = date.toDateString();
-   document.getElementById("img").src = folder + "/" + day + ".jpg";
+   document.getElementById("date").innerHTML = date.toDateString()
+   if (date.getUTCDate() > new Date().getUTCDate()) {
+    document.getElementById("img").src = folder + "/future.jpg"
+    document.getElementById("title").innerHTML = "Wait a Minute"
+    document.getElementById("description").innerHTML =
+            "Hold up! You can't just skip to another day to get more Jasper pictures. " +
+            "We'll still be here for you if you come back tomorrow."
+   } else {
+    document.getElementById("img").src = folder + "/" + day + ".jpg"
 
-   fetch(folder + "/info.json")
-           .then(response => response.text())
-           .then((file) => {
-            let info = JSON.parse(file)
-            document.getElementById("title").innerHTML = info[day]["title"];
-            document.getElementById("description").innerHTML = info[day]["desc"];
-           })
-   document.getElementById("prev").href = "https://pale-champion-atom596.github.io/JPOD/?d=" + getDay(date, "prev")
-   document.getElementById("next").href = "https://pale-champion-atom596.github.io/JPOD/?d=" + getDay(date, "next")
+    fetch(folder + "/info.json")
+            .then(response => response.text())
+            .then((file) => {
+             let info = JSON.parse(file)
+             document.getElementById("title").innerHTML = info[day]["title"]
+             document.getElementById("description").innerHTML = info[day]["desc"]
+            })
+    document.getElementById("prev").href = "https://pale-champion-atom596.github.io/JPOD/?d=" + getDay(date, "prev")
+    document.getElementById("next").href = "https://pale-champion-atom596.github.io/JPOD/?d=" + getDay(date, "next")
+   }
   }
 
   function getUrlVars() {
    let vars = {};
    let parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-    vars[key] = value;
-   });
+    vars[key] = value
+   })
    return vars;
   }
 
@@ -86,7 +93,7 @@
  <h2 id="title"></h2>
  <h3>Description:</h3>
  <p id="description"></p>
- <p><b> Credit & Copyright: </b><i>Coming soon</i></p>
+ <p><b> Credit & Copyright: </b><i id="copyright">Coming soon</i></p>
 
  <p>
   Website Authored and Owned by <a href="https://www.threads.net/@pcatom596">Autumn Hoffensetz</a>
