@@ -15,7 +15,7 @@
    let day = pad(date.getMonth() + 1) + pad(date.getDate())
    let folder = "image/" + date.getFullYear() + "/"
    document.getElementById("date").innerHTML = date.toDateString()
-   if (date.getUTCDate() > new Date().getUTCDate()) {
+   if (date > new Date()) {
     document.getElementById("img").src = folder + "/future.jpg"
     document.getElementById("title").innerHTML = "Stop Right There!"
     document.getElementById("description").innerHTML =
