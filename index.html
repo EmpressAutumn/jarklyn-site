@@ -15,17 +15,17 @@
    let day = pad(date.getMonth() + 1) + pad(date.getDate())
    let folder = "image/" + date.getFullYear() + "/"
    document.getElementById("date").innerHTML = date.toDateString()
-   if (date > new Date()) {
-    document.getElementById("img").src = folder + "/future.jpg"
+   if (date.getTime() > new Date().getTime()) {
+    document.getElementById("img").src = folder + "future.jpg"
     document.getElementById("title").innerHTML = "Stop Right There!"
     document.getElementById("description").innerHTML =
             "Now wait just a minute! You think you can just skip to another day to get more Jasper pictures? " +
             "These pictures take time and effort. You can't rush art like this. " +
             "Don't worry, we'll still be here for you tomorrow."
    } else {
-    document.getElementById("img").src = folder + "/" + day + ".jpg"
+    document.getElementById("img").src = folder + day + ".jpg"
 
-    fetch(folder + "/info.json")
+    fetch(folder + "info.json")
             .then(response => response.text())
             .then((file) => {
              let info = JSON.parse(file)
@@ -58,7 +58,6 @@
   function dayCalculator(date, dif) {
    const previous = new Date(date.getTime());
    previous.setDate(date.getDate() + dif);
-
    return previous;
   }
 
