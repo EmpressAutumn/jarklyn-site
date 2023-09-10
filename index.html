@@ -17,10 +17,11 @@
    document.getElementById("date").innerHTML = date.toDateString()
    if (date.getUTCDate() > new Date().getUTCDate()) {
     document.getElementById("img").src = folder + "/future.jpg"
-    document.getElementById("title").innerHTML = "Wait a Minute"
+    document.getElementById("title").innerHTML = "Stop Right There!"
     document.getElementById("description").innerHTML =
-            "Hold up! You can't just skip to another day to get more Jasper pictures. " +
-            "We'll still be here for you if you come back tomorrow."
+            "Now wait just a minute! You think you can just skip to another day to get more Jasper pictures? " +
+            "These pictures take time and effort. You can't rush art like this. " +
+            "Don't worry, we'll still be here for you tomorrow."
    } else {
     document.getElementById("img").src = folder + "/" + day + ".jpg"
 
