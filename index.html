@@ -5,11 +5,19 @@
 
  <script>
   window.onload = function() {
+   let GET = getUrlVars()
    let date = new Date()
-   let folder = "image/" + date.getFullYear() + "/"
+   if (GET["d"] != null) {
+    date.setFullYear(Number(GET["d"].substring(0, 4)))
+    date.setMonth(Number(GET["d"].substring(4, 6)) - 1)
+    date.setDate(Number(GET["d"].substring(6, 8)))
+   }
+
    let day = pad(date.getMonth() + 1) + pad(date.getDate())
+   let folder = "image/" + date.getFullYear() + "/"
    document.getElementById("date").innerHTML = date.toDateString();
    document.getElementById("img").src = folder + "/" + day + ".jpg";
+
    fetch(folder + "/info.json")
            .then(response => response.text())
            .then((file) => {
@@ -17,7 +25,28 @@
             document.getElementById("title").innerHTML = info[day]["title"];
             document.getElementById("description").innerHTML = info[day]["desc"];
            })
+   document.getElementById("prev").href = "https://pale-champion-atom596.github.io/JPOD/?d=" + getDay(date, "prev")
+   document.getElementById("next").href = "https://pale-champion-atom596.github.io/JPOD/?d=" + getDay(date, "next")
   }
+
+  function getUrlVars() {
+   let vars = {};
+   let parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+    vars[key] = value;
+   });
+   return vars;
+  }
+
+  function getDay(date, rel) {
+   if (rel === "prev") {
+    let yesterday = new Date().setDate(date - 1)
+    return yesterday.getFullYear() + pad(yesterday.getMonth() + 1) + pad(yesterday.getDate())
+   } else if (rel === "next") {
+    let tomorrow = new Date().setDate(date + 1)
+    return tomorrow.getFullYear() + pad(tomorrow.getMonth() + 1) + pad(tomorrow.getDate())
+   }
+  }
+
   function pad(num) {
    num = num.toString();
    while (num.length < 2) num = "0" + num;
@@ -36,10 +65,10 @@
 <h3>
  <a>Home</a>
  | <a>About</a>
- | <a href="https://pale-champion-atom596.github.io/JPOD">JPOD</a>
+ | <a href="https://pale-champion-atom596.github.io/JPOD/">JPOD</a>
 </h3>
 <hr>
- <h1><a href="ap230908.html">&lt;</a> Jasper Picture of the Day <a href="ap230910.html">&gt;</a></h1>
+ <h1><a id="prev">&lt;</a> Jasper Picture of the Day <a id="next">&gt;</a></h1>
 
  <h3 id="date"></h3>
  <a id="link">
