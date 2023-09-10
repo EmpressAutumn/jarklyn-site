@@ -39,12 +39,19 @@
 
   function getDay(date, rel) {
    if (rel === "prev") {
-    let yesterday = new Date(new Date().setDate(date.getDate() - 1))
+    let yesterday = dayCalculator(date, -1)
     return yesterday.getFullYear() + pad(yesterday.getMonth() + 1) + pad(yesterday.getDate())
    } else if (rel === "next") {
-    let tomorrow = new Date(new Date().setDate(date.getDate() + 1))
+    let tomorrow = dayCalculator(date, 1)
     return tomorrow.getFullYear() + pad(tomorrow.getMonth() + 1) + pad(tomorrow.getDate())
    }
+  }
+
+  function dayCalculator(date, dif) {
+   const previous = new Date(date.getTime());
+   previous.setDate(date.getDate() + dif);
+
+   return previous;
   }
 
   function pad(num) {
