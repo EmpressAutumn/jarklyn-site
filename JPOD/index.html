@@ -13,6 +13,7 @@
     date.setMonth(Number(GET["d"].substring(4, 6)) - 1)
     date.setDate(Number(GET["d"].substring(6, 8)))
    }
+   let today = new Date()
    let day = pad(date.getMonth() + 1) + pad(date.getDate())
    let folder = "image/" + date.getFullYear() + "/"
    document.getElementById("date").innerHTML = date.toDateString()
@@ -23,6 +24,8 @@
             "Now wait just a minute! You think you can just skip to another day to get more Jasper pictures? " +
             "These pictures take time and effort. You can't rush art like this. " +
             "Don't worry, we'll still be here for you tomorrow."
+    document.getElementById("prev").href = "https://www.atom596.com/JPOD/?d=" +
+            today.getFullYear() + pad(today.getMonth() + 1) + pad(today.getDate())
    } else {
     document.getElementById("img").src = folder + day + ".jpg"
 
