@@ -1,103 +1,15 @@
-﻿<!doctype html>
-<html lang="en">
+<html>
 <head>
- <title>Jasper Picture of the Day</title>
-
- <script>
-  window.onload = function() {
-   let GET = getUrlVars()
-   let date = new Date()
-   if (GET["d"] != null) {
-    date.setFullYear(Number(GET["d"].substring(0, 4)))
-    date.setMonth(Number(GET["d"].substring(4, 6)) - 1)
-    date.setDate(Number(GET["d"].substring(6, 8)))
-   }
-   let day = pad(date.getMonth() + 1) + pad(date.getDate())
-   let folder = "image/" + date.getFullYear() + "/"
-   document.getElementById("date").innerHTML = date.toDateString()
-   if (date.getTime() > new Date().getTime()) {
-    document.getElementById("img").src = folder + "future.jpg"
-    document.getElementById("title").innerHTML = "Stop Right There!"
-    document.getElementById("description").innerHTML =
-            "Now wait just a minute! You think you can just skip to another day to get more Jasper pictures? " +
-            "These pictures take time and effort. You can't rush art like this. " +
-            "Don't worry, we'll still be here for you tomorrow."
-   } else {
-    document.getElementById("img").src = folder + day + ".jpg"
-
-    fetch(folder + "info.json")
-            .then(response => response.text())
-            .then((file) => {
-             let info = JSON.parse(file)
-             document.getElementById("title").innerHTML = info[day]["title"]
-             document.getElementById("description").innerHTML = info[day]["desc"]
-            })
-    document.getElementById("prev").href = "https://pale-champion-atom596.github.io/JPOD/?d=" + getDay(date, "prev")
-    document.getElementById("next").href = "https://pale-champion-atom596.github.io/JPOD/?d=" + getDay(date, "next")
-   }
-  }
-
-  function getUrlVars() {
-   let vars = {};
-   let parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-    vars[key] = value
-   })
-   return vars;
-  }
-
-  function getDay(date, rel) {
-   if (rel === "prev") {
-    let yesterday = dayCalculator(date, -1)
-    return yesterday.getFullYear() + pad(yesterday.getMonth() + 1) + pad(yesterday.getDate())
-   } else if (rel === "next") {
-    let tomorrow = dayCalculator(date, 1)
-    return tomorrow.getFullYear() + pad(tomorrow.getMonth() + 1) + pad(tomorrow.getDate())
-   }
-  }
-
-  function dayCalculator(date, dif) {
-   const previous = new Date(date.getTime());
-   previous.setDate(date.getDate() + dif);
-   return previous;
-  }
-
-  function pad(num) {
-   num = num.toString();
-   while (num.length < 2) num = "0" + num;
-   return num;
-  }
- </script>
- <style>
-  body {
-   text-align: center;
-  }
- </style>
+    <title>Atom596.com</title>
+    <link href="/./global.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
 <hr>
 <h3>
- <a>Home</a>
- | <a>About</a>
- | <a href="https://pale-champion-atom596.github.io/JPOD/">JPOD</a>
+    <a href="https://www.atom596.com/">Home</a>
+    | <a href="https://www.atom596.com/about/">About</a>
+    | <a href="https://www.atom596.com/JPOD/">JPOD</a>
 </h3>
 <hr>
- <h1><a id="prev">&lt;</a> Jasper Picture of the Day <a id="next">&gt;</a></h1>
-
- <h3 id="date"></h3>
- <a id="link">
-  <img id="img" alt="If you can't see the image, read the description!"
-       style="max-width:80%; max-height: 80vh">
- </a>
-
- <h2 id="title"></h2>
- <h3>Description:</h3>
- <p id="description"></p>
- <p><b> Credit & Copyright: </b><i id="copyright">Coming soon</i></p>
-
- <p>
-  Website Authored and Owned by <a href="https://www.threads.net/@pcatom596">Autumn Hoffensetz</a>
- </p>
- <br>
 </body>
 </html>
