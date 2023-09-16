@@ -3,9 +3,13 @@
 <head>
  <title>JPOD | Atom596.com</title>
  <link href="/./global.css" rel="stylesheet" type="text/css">
-
  <script>
   window.onload = function() {
+   fetch("/./topbar/topbar.html")
+           .then(response => response.text())
+           .then((data) => {
+            document.getElementById("topbar").innerHTML = data
+           })
    let GET = getUrlVars()
    let date = new Date()
    if (GET["d"] != null) {
@@ -70,7 +74,7 @@
 </head>
 
 <body>
-<iframe src="/./topbar.html"></iframe>
+<div id="topbar"></div>
  <h1><a id="prev">&lt;</a> Jasper Picture of the Day <a id="next">&gt;</a></h1>
 
  <h3 id="date"></h3>

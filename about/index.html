@@ -3,9 +3,18 @@
     <title>About | Atom596.com</title>
     <link href="/./global.css" rel="stylesheet" type="text/css">
     <link href="achievement.css" rel="stylesheet" type="text/css">
+    <script>
+        window.onload = function() {
+            fetch("/./topbar/topbar.html")
+                .then(response => response.text())
+                .then((data) => {
+                    document.getElementById("topbar").innerHTML = data
+                })
+        }
+    </script>
 </head>
 <body>
-    <iframe src="/./topbar.html"></iframe>
+    <div id="topbar"></div>
     <!-- <div class="achieveBox">
         <div class="achieveImgHolder"><img src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/394360/1711682a1ce7e05b13d9eadb02fb3d0a687eb1d3.jpg"></div>
         <div class="achieveTxtHolder">

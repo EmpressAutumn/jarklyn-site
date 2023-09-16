@@ -2,9 +2,18 @@
 <head>
     <title>Projects | Atom596.com</title>
     <link href="/./global.css" rel="stylesheet" type="text/css">
+    <script>
+        window.onload = function() {
+            fetch("/./topbar/topbar.html")
+                .then(response => response.text())
+                .then((data) => {
+                    document.getElementById("topbar").innerHTML = data
+                })
+        }
+    </script>
 </head>
 <body>
-    <iframe src="/./topbar.html"></iframe>
+    <div id="topbar"></div>
     <p>
         Website Authored and Owned by <a href="https://www.threads.net/@pcatom596">Autumn Hoffensetz</a>
     </p>
