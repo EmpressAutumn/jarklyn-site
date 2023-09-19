@@ -1,10 +1,12 @@
 <html lang="en">
 <head>
-    <title>Atom596.com</title>
-    <link href="global.css" rel="stylesheet" type="text/css">
+    <title>Blog | Atom596.com</title>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <link href="../global.css" rel="stylesheet" type="text/css">
+    <link href="article.css" rel="stylesheet" type="text/css">
     <script>
         window.onload = function() {
-            fetch("topbar.html")
+            fetch("../topbar.html")
                 .then(response => response.text())
                 .then((data) => {
                     document.getElementById("topbar").innerHTML = data
@@ -14,6 +16,9 @@
 </head>
 <body>
     <div id="topbar"></div>
+    <div class="article">
+        <md-block src="articles/placeholder.md"></md-block>
+    </div>
     <p>
         Website Authored and Owned by <a href="https://www.threads.net/@pcatom596">Autumn Hoffensetz</a>
     </p>

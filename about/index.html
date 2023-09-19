@@ -1,11 +1,11 @@
-<html>
+<html lang="en">
 <head>
     <title>About | Atom596.com</title>
     <link href="/./global.css" rel="stylesheet" type="text/css">
     <link href="achievement.css" rel="stylesheet" type="text/css">
     <script>
         window.onload = function() {
-            fetch("/./topbar/topbar.html")
+            fetch("/./topbar.html")
                 .then(response => response.text())
                 .then((data) => {
                     document.getElementById("topbar").innerHTML = data
