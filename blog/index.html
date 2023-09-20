@@ -2,11 +2,11 @@
 <head>
     <title>Blog | Atom596.com</title>
     <script type="module" src="https://md-block.verou.me/md-block.js"></script>
-    <link href="../global.css" rel="stylesheet" type="text/css">
+    <link href="/global.css" rel="stylesheet" type="text/css">
     <link href="article.css" rel="stylesheet" type="text/css">
     <script>
         window.onload = function() {
-            fetch("../topbar.html")
+            fetch("/topbar.html")
                 .then(response => response.text())
                 .then((data) => {
                     document.getElementById("topbar").innerHTML = data
