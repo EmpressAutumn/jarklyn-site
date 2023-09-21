@@ -5,19 +5,34 @@
     <link href="/global.css" rel="stylesheet" type="text/css">
     <link href="article.css" rel="stylesheet" type="text/css">
     <script>
+        let latest = "ethics_piracy"
         window.onload = function() {
             fetch("/topbar.html")
                 .then(response => response.text())
                 .then((data) => {
                     document.getElementById("topbar").innerHTML = data
                 })
+            let article = getUrlVars()["a"]
+            if (article != null) {
+                document.getElementById("article").src = "articles/" + article + ".md"
+            } else {
+                document.getElementById("article").src = "articles/" + latest + ".md"
+            }
+        }
+        function getUrlVars() {
+            let vars = {};
+            let parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                vars[key] = value
+            })
+            return vars;
         }
     </script>
 </head>
 <body>
     <div id="topbar"></div>
-    <div class="article">
-        <md-block src="articles/placeholder.md"></md-block>
+    <h1>Blog596</h1>
+    <div class="a_container">
+        <md-block id="article"></md-block>
     </div>
     <p>
         Website Authored and Owned by <a href="https://www.threads.net/@pcatom596">Autumn Hoffensetz</a>
