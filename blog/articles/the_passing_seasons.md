@@ -1,4 +1,5 @@
-# The Passing Seasons
+[//]: # (Title: The Passing Seasons)
+[//]: # (Author: Autumn Hoffensetz)
 
 It's that time of year again. The first leaves are starting to turn orange and red, and some have even begun to litter the ground. Yes, autumn is only a mere two days away.
 

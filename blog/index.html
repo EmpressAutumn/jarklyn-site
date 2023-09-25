@@ -12,12 +12,21 @@
                 .then((data) => {
                     document.getElementById("topbar").innerHTML = data
                 })
-            let article = getUrlVars()["a"]
+            let article = getUrlVars()["a"];
+            let article_url;
             if (article != null) {
-                document.getElementById("article").src = "articles/" + article + ".md"
+                article_url = "articles/" + article + ".md";
             } else {
-                document.getElementById("article").src = "articles/" + latest + ".md"
+                article_url = "articles/" + latest + ".md";
             }
+            document.getElementById("article").src = article_url;
+            fetch(article_url)
+                .then(response => response.text())
+                .then((file) => {
+                    let metadata = parseMetadata(file)
+                    document.getElementById("title").innerHTML = metadata["Title"]
+                    document.getElementById("author").innerHTML = "By " + metadata["Author"]
+                })
         }
         function getUrlVars() {
             let vars = {};
@@ -26,12 +35,28 @@
             })
             return vars;
         }
+        function parseMetadata(markdownContent) {
+            const metadata = {};
+            const metadataRegex = /\[\/\/\]: # \(([^:]+)\: ([^\n]+)\)/g;
+            let match;
+            while ((match = metadataRegex.exec(markdownContent)) !== null) {
+                const key = match[1].trim();
+                const value = match[2].trim();
+                metadata[key] = value;
+            }
+            return metadata;
+        }
     </script>
 </head>
 <body>
     <div id="topbar"></div>
-    <h1>Atom596's Blog</h1>
+    <h1>Autumn's Words</h1>
     <div class="a_container">
+        <div style="text-align: center" >
+            <h1 id="title"></h1>
+            <h3 id="author"></h3>
+            <br>
+        </div>
         <md-block id="article"></md-block>
     </div>
     <p>
