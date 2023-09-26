@@ -1,4 +1,5 @@
-# My First Blog Post
+[//]: # (Title: My First Blog Post)
+[//]: # (Author: ChatGPT)
 
 Welcome to my blogging website! This is my first blog post, and I'm excited to share some thoughts with you.
 
