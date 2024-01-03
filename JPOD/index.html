@@ -9,6 +9,11 @@
            .then((data) => {
             document.getElementById("topbar").innerHTML = data
            })
+   fetch("/socialbar.html")
+           .then(response => response.text())
+           .then((data) => {
+            document.getElementById("socialbar").innerHTML = data
+           })
    let GET = getUrlVars()
    let date = new Date()
    if (GET["d"] != null) {
@@ -87,9 +92,7 @@
  <p id="description"></p>
  <p><b>Image Copyright: </b><i id="copyright">The Hoffensetz Family</i></p>
 
- <p>
-  Website Authored and Owned by <a href="https://www.threads.net/@pcatom596">Autumn Hoffensetz</a>
- </p>
+ <div id="socialbar"></div>
  <br>
 </body>
 </html>

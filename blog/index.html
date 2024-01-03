@@ -12,6 +12,11 @@
                 .then((data) => {
                     document.getElementById("topbar").innerHTML = data
                 })
+            fetch("/socialbar.html")
+                .then(response => response.text())
+                .then((data) => {
+                    document.getElementById("socialbar").innerHTML = data
+                })
             let article = getUrlVars()["a"];
             let article_url;
             if (article != null) {
@@ -59,8 +64,6 @@
         </div>
         <md-block id="article"></md-block>
     </div>
-    <p>
-        Website Authored and Owned by <a href="https://www.threads.net/@pcatom596">Autumn Hoffensetz</a>
-    </p>
+    <div id="socialbar"></div>
 </body>
 </html>
