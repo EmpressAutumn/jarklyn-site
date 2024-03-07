@@ -1,631 +1,909 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Play Free Sudoku online - solve web sudoku puzzles</title><meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><meta name="apple-itunes-app" content="app-id=1193508329, affiliate-data=sudoku.com%20web"><meta name="description" content="Play free Sudoku online from Easy to Expert level on Sudoku.com. Select a difficulty level of a web sudoku puzzle to challenge yourself and enjoy the game!"><meta name="keywords" content><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><meta name="google-site-verification" content="V5Kg0iLVBA5VdRdkMAV_kdAzyLxwizsIZdVvAnHkTyg" /><meta name="google-site-verification" content="rFuc-MTuwUczYY0IagG3SQ8HteDPkj3a29Qb_2r1hMc" /><link rel="stylesheet" href="/build/ref-game.042cfedc.css"><link hreflang="JP" href="/jp" rel="alternate" /><link hreflang="IT" href="/it" rel="alternate" /><link hreflang="ZH" href="/zh" rel="alternate" /><link hreflang="DE" href="/de" rel="alternate" /><link hreflang="FR" href="/fr" rel="alternate" /><link hreflang="ES" href="/es" rel="alternate" /><link hreflang="PT" href="/pt" rel="alternate" /><link hreflang="TR" href="/tr" rel="alternate" /><link hreflang="PL" href="/pl" rel="alternate" /><link hreflang="KO" href="/ko" rel="alternate" /><link hreflang="TH" href="/th" rel="alternate" /><link hreflang="VI" href="/vi" rel="alternate" /><link hreflang="AR" href="/ar" rel="alternate" /><link hreflang="MX" href="/mx" rel="alternate" /><link hreflang="BR" href="/br" rel="alternate" /><link hreflang="TW" href="/tw" rel="alternate" /><link hreflang="RU" href="/ru" rel="alternate" /><link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/manifest.json" /><link rel="canonical" href="https://sudoku.com/" /><script>
-                window.eb = new function() {
-                    this.userProfile = {"device":{"type":"desktop","os":"undefined"},"location":{"country":{"isoCode2":"FR"}}};
-                    this.settings = {"ima_ads":true,"show_killer_new":false,"banner_refresh":true,"banner_refresh_time":45,"ima_ads_on_start":true,"ads_test_tag":false,"ima_ads_delay":60,"ima_ads_on_restart":true,"ima_ads_on_finish":true,"banner_show_main_leaderboard":true,"banner_show_main_square":true,"server_post_event":true,"server_event":true,"banner_show_articles_leaderboard":true,"banner_show_articles_desktop":true,"banner_show_awards_leaderboard":true,"banner_show_awards_square":true,"banner_show_main_low_square":true,"banner_show_skyscraper":true,"count_hints":3,"count_mistakes":3,"use_limitation_hints":true,"use_cmp":true,"show_cheat_menu":false,"use_smart_hints":true,"use_rise_interstitial":true,"video_ads_enabled":true,"use_ets":true,"ets_batch_th":20,"ets_batch_tth":20,"ets_event_lt":20,"use_index_exchange":true,"use_pubmatic":true,"use_triplelift":true,"show_rise_mobile_banner":true,"use_ab_hints":true,"use_xandr":true,"use_acuity":false,"use_tappx":false,"use_multi_format_apstag":false,"use_minute_media":true,"use_magnite":true,"sentry_sample_rate":1,"sentry_traces_sample_rate":1,"use_sentry":false,"use_google_instead_rise":false,"use_size_mapper_aps_and_prebid":false,"use_banner_winscreen":true,"use_filled_gpt_inter":false,"use_banner_refresh_on_render":false,"use_tournament_services":true,"use_ima_inter":true,"use_smaato":true,"use_sharethrough":true,"use_own_prebid":true,"rewarded_refresh_time":45,"tournaments":true,"ima_ads_refresh_time":45,"use_vidazoo":true};
-                    this.params = {"eaid":700000,"env":"production","buildVersion":3235,"etsHost":"https:\/\/ets.easybrain.com","tournamentHost":"https:\/\/tournaments.easybrain.com","authHost":"https:\/\/auth.easybrain.com","awardsHost":"https:\/\/awards.easybrain.com"};
-                };
-            </script><script>
-        var newGroups = JSON.parse('[]') || {};
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>
+    Giant 16x16 Sudoku Puzzle. Play Hexadoku online or printable.
+  </title>
+  <link href="/Styles/styles.min.css?v=11" type=text/css rel=stylesheet>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" type=image/x-icon rel=icon>
+<link href="favicon.ico" type=image/x-icon rel="shortcut icon">
+<script data-ad-client="ca-pub-4711337094015718" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta content="Free 16x16 Puzzles - also called Hexadoku. Play online or print them out for free." name="Description">
+  <meta content="Su doku, sudoku,su do ku,soduku,sudoka,printable sudoku, printable sudoku puzzles,free sudoku, free sudoku puzzles,numberplace,number place,codenumber,puzzle,16x16,free,logic,solution,daily,web,hints" name="Keywords">
+  <script src="/includes/Player30js.js?v=3" type="text/javascript"></script>
+  <script src="/includes/linkcodeV6.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+var sUnsolvedSudoku
+var sSolvedSudoku
+var sStyle
+var sHeader
+var sTodaysDate
+var d_names = new Array("Sunday", "Monday", "Tuesday","Wednesday", "Thursday", "Friday", "Saturday");
+var d = new Date();
+var curr_day = d.getDay();
+var curr_date = d.getDate();
+var curr_month = d.getMonth() + 1;
+var curr_year = d.getFullYear();
+var sSourceName
+var sDiffSetting;
+var sPrintDescription;
+var sPrizeCaption = "\n\nNo comment was given for this picture.";
+var IsSupportingMember;
+var bEnterYourOwnPuzzle = false;
+var IntervalTimes = new Array(256);
+for (i=0; i <=256; i++)
+{ IntervalTimes[i]=new Array(4);
+ IntervalTimes[i][2] = 0;
+ IntervalTimes[i][3] ='';
+ IntervalTimes[i][4] =''; }
+var sQueryString = unescape(location.search);
+var Undos = new Array(200);
+var UndosCurr;
+UndosCurr=1;
+IsSupportingMember=false;
+sQueryString = sQueryString.replace('?','');
+sDiffSetting = 'Y';
+sSourceName = '8-3-2024.js';
+sTodaysDate = 'Friday 8-3-2024';
+sUnsolvedSudoku ="<table class=sudokutable><tr><td class=bdr00>A</td><td class=bdr10>9</td><td class=bdr10>&nbsp;</td><td class=bdr20>D</td><td class=bdr00>8</td><td class=bdr10>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr20>&nbsp;</td><td class=bdr00>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr20>6</td><td class=bdr00>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr20>4</td></tr><tr><td class=bdr01>2</td><td class=bdr11>F</td><td class=bdr11>&nbsp;</td><td class=bdr21>6</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr21>C</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>4</td><td class=bdr21>&nbsp;</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr21>A</td></tr><tr><td class=bdr01>&nbsp;</td><td class=bdr11>8</td><td class=bdr11>C</td><td class=bdr21>&nbsp;</td><td class=bdr01>B</td><td class=bdr11>&nbsp;</td><td class=bdr11>5</td><td class=bdr21>1</td><td class=bdr01>A</td><td class=bdr11>&nbsp;</td><td class=bdr11>F</td><td class=bdr21>E</td><td class=bdr01>&nbsp;</td><td class=bdr11>3</td><td class=bdr11>9</td><td class=bdr21>&nbsp;</td></tr><tr><td class=bdr02>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr12>5</td><td class=bdr22>&nbsp;</td><td class=bdr02>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr22>&nbsp;</td><td class=bdr02>&nbsp;</td><td class=bdr12>7</td><td class=bdr12>1</td><td class=bdr22>8</td><td class=bdr02>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr22>&nbsp;</td></tr><tr><td class=bdr00>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr10>F</td><td class=bdr20>&nbsp;</td><td class=bdr00>5</td><td class=bdr10>2</td><td class=bdr10>&nbsp;</td><td class=bdr20>&nbsp;</td><td class=bdr00>&nbsp;</td><td class=bdr10>E</td><td class=bdr10>&nbsp;</td><td class=bdr20>&nbsp;</td><td class=bdr00>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr10>A</td><td class=bdr20>&nbsp;</td></tr><tr><td class=bdr01>&nbsp;</td><td class=bdr11>7</td><td class=bdr11>&nbsp;</td><td class=bdr21>&nbsp;</td><td class=bdr01>&nbsp;</td><td class=bdr11>D</td><td class=bdr11>C</td><td class=bdr21>B</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr21>&nbsp;</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr21>G</td></tr><tr><td class=bdr01>E</td><td class=bdr11>5</td><td class=bdr11>A</td><td class=bdr21>&nbsp;</td><td class=bdr01>&nbsp;</td><td class=bdr11>9</td><td class=bdr11>&nbsp;</td><td class=bdr21>&nbsp;</td><td class=bdr01>C</td><td class=bdr11>&nbsp;</td><td class=bdr11>8</td><td class=bdr21>&nbsp;</td><td class=bdr01>7</td><td class=bdr11>6</td><td class=bdr11>&nbsp;</td><td class=bdr21>&nbsp;</td></tr><tr><td class=bdr02>8</td><td class=bdr12>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr22>&nbsp;</td><td class=bdr02>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr22>F</td><td class=bdr02>4</td><td class=bdr12>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr22>9</td><td class=bdr02>&nbsp;</td><td class=bdr12>2</td><td class=bdr12>1</td><td class=bdr22>&nbsp;</td></tr><tr><td class=bdr00>6</td><td class=bdr10>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr20>&nbsp;</td><td class=bdr00>G</td><td class=bdr10>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr20>&nbsp;</td><td class=bdr00>2</td><td class=bdr10>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr20>D</td><td class=bdr00>4</td><td class=bdr10>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr20>7</td></tr><tr><td class=bdr01>1</td><td class=bdr11>B</td><td class=bdr11>&nbsp;</td><td class=bdr21>&nbsp;</td><td class=bdr01>9</td><td class=bdr11>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr21>&nbsp;</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>A</td><td class=bdr21>&nbsp;</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr21>D</td></tr><tr><td class=bdr01>&nbsp;</td><td class=bdr11>A</td><td class=bdr11>&nbsp;</td><td class=bdr21>&nbsp;</td><td class=bdr01>F</td><td class=bdr11>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr21>&nbsp;</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr21>&nbsp;</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>2</td><td class=bdr21>&nbsp;</td></tr><tr><td class=bdr02>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr12>3</td><td class=bdr22>&nbsp;</td><td class=bdr02>7</td><td class=bdr12>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr22>6</td><td class=bdr02>&nbsp;</td><td class=bdr12>B</td><td class=bdr12>&nbsp;</td><td class=bdr22>&nbsp;</td><td class=bdr02>&nbsp;</td><td class=bdr12>9</td><td class=bdr12>&nbsp;</td><td class=bdr22>&nbsp;</td></tr><tr><td class=bdr00>C</td><td class=bdr10>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr20>2</td><td class=bdr00>&nbsp;</td><td class=bdr10>4</td><td class=bdr10>8</td><td class=bdr20>&nbsp;</td><td class=bdr00>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr20>A</td><td class=bdr00>G</td><td class=bdr10>&nbsp;</td><td class=bdr10>&nbsp;</td><td class=bdr20>3</td></tr><tr><td class=bdr01>4</td><td class=bdr11>G</td><td class=bdr11>&nbsp;</td><td class=bdr21>F</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>B</td><td class=bdr21>&nbsp;</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>6</td><td class=bdr21>&nbsp;</td><td class=bdr01>2</td><td class=bdr11>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr21>&nbsp;</td></tr><tr><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr21>&nbsp;</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>E</td><td class=bdr21>3</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>G</td><td class=bdr21>1</td><td class=bdr01>&nbsp;</td><td class=bdr11>&nbsp;</td><td class=bdr11>B</td><td class=bdr21>&nbsp;</td></tr><tr><td class=bdr02>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr22>&nbsp;</td><td class=bdr02>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr12>&nbsp;</td><td class=bdr22>2</td><td class=bdr02>9</td><td class=bdr12>&nbsp;</td><td class=bdr12>E</td><td class=bdr22>&nbsp;</td><td class=bdr02>&nbsp;</td><td class=bdr12>1</td><td class=bdr12>&nbsp;</td><td class=bdr22>8</td></tr></table><div>Sudoku provided by Sudoku.com.au</div>";
+sSolvedSudoku ="<table class=sudokutable><tr><td class=bdr00>A</td><td class=bdr10>9</td><td class=bdr10>B</td><td class=bdr20>D</td><td class=bdr00>8</td><td class=bdr10>E</td><td class=bdr10>F</td><td class=bdr20>7</td><td class=bdr00>3</td><td class=bdr10>C</td><td class=bdr10>2</td><td class=bdr20>6</td><td class=bdr00>1</td><td class=bdr10>5</td><td class=bdr10>G</td><td class=bdr20>4</td></tr><tr><td class=bdr01>2</td><td class=bdr11>F</td><td class=bdr11>1</td><td class=bdr21>6</td><td class=bdr01>D</td><td class=bdr11>3</td><td class=bdr11>G</td><td class=bdr21>C</td><td class=bdr01>5</td><td class=bdr11>9</td><td class=bdr11>4</td><td class=bdr21>B</td><td class=bdr01>E</td><td class=bdr11>7</td><td class=bdr11>8</td><td class=bdr21>A</td></tr><tr><td class=bdr01>7</td><td class=bdr11>8</td><td class=bdr11>C</td><td class=bdr21>4</td><td class=bdr01>B</td><td class=bdr11>6</td><td class=bdr11>5</td><td class=bdr21>1</td><td class=bdr01>A</td><td class=bdr11>G</td><td class=bdr11>F</td><td class=bdr21>E</td><td class=bdr01>D</td><td class=bdr11>3</td><td class=bdr11>9</td><td class=bdr21>2</td></tr><tr><td class=bdr02>G</td><td class=bdr12>E</td><td class=bdr12>5</td><td class=bdr22>3</td><td class=bdr02>2</td><td class=bdr12>A</td><td class=bdr12>9</td><td class=bdr22>4</td><td class=bdr02>D</td><td class=bdr12>7</td><td class=bdr12>1</td><td class=bdr22>8</td><td class=bdr02>B</td><td class=bdr12>F</td><td class=bdr12>C</td><td class=bdr22>6</td></tr><tr><td class=bdr00>3</td><td class=bdr10>4</td><td class=bdr10>F</td><td class=bdr20>C</td><td class=bdr00>5</td><td class=bdr10>2</td><td class=bdr10>6</td><td class=bdr20>8</td><td class=bdr00>1</td><td class=bdr10>E</td><td class=bdr10>7</td><td class=bdr20>G</td><td class=bdr00>9</td><td class=bdr10>D</td><td class=bdr10>A</td><td class=bdr20>B</td></tr><tr><td class=bdr01>9</td><td class=bdr11>7</td><td class=bdr11>2</td><td class=bdr21>1</td><td class=bdr01>E</td><td class=bdr11>D</td><td class=bdr11>C</td><td class=bdr21>B</td><td class=bdr01>6</td><td class=bdr11>A</td><td class=bdr11>3</td><td class=bdr21>F</td><td class=bdr01>5</td><td class=bdr11>8</td><td class=bdr11>4</td><td class=bdr21>G</td></tr><tr><td class=bdr01>E</td><td class=bdr11>5</td><td class=bdr11>A</td><td class=bdr21>B</td><td class=bdr01>4</td><td class=bdr11>9</td><td class=bdr11>1</td><td class=bdr21>G</td><td class=bdr01>C</td><td class=bdr11>D</td><td class=bdr11>8</td><td class=bdr21>2</td><td class=bdr01>7</td><td class=bdr11>6</td><td class=bdr11>3</td><td class=bdr21>F</td></tr><tr><td class=bdr02>8</td><td class=bdr12>6</td><td class=bdr12>D</td><td class=bdr22>G</td><td class=bdr02>3</td><td class=bdr12>7</td><td class=bdr12>A</td><td class=bdr22>F</td><td class=bdr02>4</td><td class=bdr12>5</td><td class=bdr12>B</td><td class=bdr22>9</td><td class=bdr02>C</td><td class=bdr12>2</td><td class=bdr12>1</td><td class=bdr22>E</td></tr><tr><td class=bdr00>6</td><td class=bdr10>C</td><td class=bdr10>9</td><td class=bdr20>E</td><td class=bdr00>G</td><td class=bdr10>8</td><td class=bdr10>3</td><td class=bdr20>A</td><td class=bdr00>2</td><td class=bdr10>1</td><td class=bdr10>5</td><td class=bdr20>D</td><td class=bdr00>4</td><td class=bdr10>B</td><td class=bdr10>F</td><td class=bdr20>7</td></tr><tr><td class=bdr01>1</td><td class=bdr11>B</td><td class=bdr11>4</td><td class=bdr21>5</td><td class=bdr01>9</td><td class=bdr11>C</td><td class=bdr11>2</td><td class=bdr21>E</td><td class=bdr01>F</td><td class=bdr11>8</td><td class=bdr11>A</td><td class=bdr21>7</td><td class=bdr01>3</td><td class=bdr11>G</td><td class=bdr11>6</td><td class=bdr21>D</td></tr><tr><td class=bdr01>D</td><td class=bdr11>A</td><td class=bdr11>G</td><td class=bdr21>7</td><td class=bdr01>F</td><td class=bdr11>B</td><td class=bdr11>4</td><td class=bdr21>5</td><td class=bdr01>E</td><td class=bdr11>6</td><td class=bdr11>9</td><td class=bdr21>3</td><td class=bdr01>8</td><td class=bdr11>C</td><td class=bdr11>2</td><td class=bdr21>1</td></tr><tr><td class=bdr02>F</td><td class=bdr12>2</td><td class=bdr12>3</td><td class=bdr22>8</td><td class=bdr02>7</td><td class=bdr12>1</td><td class=bdr12>D</td><td class=bdr22>6</td><td class=bdr02>G</td><td class=bdr12>B</td><td class=bdr12>C</td><td class=bdr22>4</td><td class=bdr02>A</td><td class=bdr12>9</td><td class=bdr12>E</td><td class=bdr22>5</td></tr><tr><td class=bdr00>C</td><td class=bdr10>1</td><td class=bdr10>7</td><td class=bdr20>2</td><td class=bdr00>6</td><td class=bdr10>4</td><td class=bdr10>8</td><td class=bdr20>9</td><td class=bdr00>B</td><td class=bdr10>F</td><td class=bdr10>D</td><td class=bdr20>A</td><td class=bdr00>G</td><td class=bdr10>E</td><td class=bdr10>5</td><td class=bdr20>3</td></tr><tr><td class=bdr01>4</td><td class=bdr11>G</td><td class=bdr11>E</td><td class=bdr21>F</td><td class=bdr01>1</td><td class=bdr11>5</td><td class=bdr11>B</td><td class=bdr21>D</td><td class=bdr01>8</td><td class=bdr11>3</td><td class=bdr11>6</td><td class=bdr21>C</td><td class=bdr01>2</td><td class=bdr11>A</td><td class=bdr11>7</td><td class=bdr21>9</td></tr><tr><td class=bdr01>5</td><td class=bdr11>D</td><td class=bdr11>8</td><td class=bdr21>9</td><td class=bdr01>A</td><td class=bdr11>F</td><td class=bdr11>E</td><td class=bdr21>3</td><td class=bdr01>7</td><td class=bdr11>2</td><td class=bdr11>G</td><td class=bdr21>1</td><td class=bdr01>6</td><td class=bdr11>4</td><td class=bdr11>B</td><td class=bdr21>C</td></tr><tr><td class=bdr02>B</td><td class=bdr12>3</td><td class=bdr12>6</td><td class=bdr22>A</td><td class=bdr02>C</td><td class=bdr12>G</td><td class=bdr12>7</td><td class=bdr22>2</td><td class=bdr02>9</td><td class=bdr12>4</td><td class=bdr12>E</td><td class=bdr22>5</td><td class=bdr02>F</td><td class=bdr12>1</td><td class=bdr12>D</td><td class=bdr22>8</td></tr></table><div>Sudoku provided by Sudoku.com.au</div>";
+var iGridUnsolved= new Array('A',9,0,'D',8,0,0,0,0,0,0,6,0,0,0,4,2,'F',0,6,0,0,0,'C',0,0,4,0,0,0,0,'A',0,8,'C',0,'B',0,5,1,'A',0,'F','E',0,3,9,0,0,0,5,0,0,0,0,0,0,7,1,8,0,0,0,0,0,0,'F',0,5,2,0,0,0,'E',0,0,0,0,'A',0,0,7,0,0,0,'D','C','B',0,0,0,0,0,0,0,'G','E',5,'A',0,0,9,0,0,'C',0,8,0,7,6,0,0,8,0,0,0,0,0,0,'F',4,0,0,9,0,2,1,0,6,0,0,0,'G',0,0,0,2,0,0,'D',4,0,0,7,1,'B',0,0,9,0,0,0,0,0,'A',0,0,0,0,'D',0,'A',0,0,'F',0,0,0,0,0,0,0,0,0,2,0,0,0,3,0,7,0,0,6,0,'B',0,0,0,9,0,0,'C',0,0,2,0,4,8,0,0,0,0,'A','G',0,0,3,4,'G',0,'F',0,0,'B',0,0,0,6,0,2,0,0,0,0,0,0,0,0,0,'E',3,0,0,'G',1,0,0,'B',0,0,0,0,0,0,0,0,2,9,0,'E',0,0,1,0,8);
+var iGridSolved= new Array('A',9,'B','D',8,'E','F',7,3,'C',2,6,1,5,'G',4,2,'F',1,6,'D',3,'G','C',5,9,4,'B','E',7,8,'A',7,8,'C',4,'B',6,5,1,'A','G','F','E','D',3,9,2,'G','E',5,3,2,'A',9,4,'D',7,1,8,'B','F','C',6,3,4,'F','C',5,2,6,8,1,'E',7,'G',9,'D','A','B',9,7,2,1,'E','D','C','B',6,'A',3,'F',5,8,4,'G','E',5,'A','B',4,9,1,'G','C','D',8,2,7,6,3,'F',8,6,'D','G',3,7,'A','F',4,5,'B',9,'C',2,1,'E',6,'C',9,'E','G',8,3,'A',2,1,5,'D',4,'B','F',7,1,'B',4,5,9,'C',2,'E','F',8,'A',7,3,'G',6,'D','D','A','G',7,'F','B',4,5,'E',6,9,3,8,'C',2,1,'F',2,3,8,7,1,'D',6,'G','B','C',4,'A',9,'E',5,'C',1,7,2,6,4,8,9,'B','F','D','A','G','E',5,3,4,'G','E','F',1,5,'B','D',8,3,6,'C',2,'A',7,9,5,'D',8,9,'A','F','E',3,7,2,'G',1,6,4,'B','C','B',3,6,'A','C','G',7,2,9,4,'E',5,'F',1,'D',8);
+var sPuzzleID = 'Puzzle #32020 - ';
 
-        window.isShowPersonalAdv = Boolean('');
-        window.isShowAnalytics = Boolean('');
-        window.useCmp = Boolean('1');
-        window.abGroups = JSON.parse('[]');
-        window.newGroups = Object.keys(newGroups).map(function(key) { return newGroups[key]; });
-        window.fv = 1709823079;
-                    window.fs = true;
-            </script><script>
-        window.dataLayer = window.dataLayer || [];
+sStyle = "<style> div {font-family:Verdana,Arial, Helvetica, sans-serif; font-size:11px; }table.sudokutable {BORDER-COLLAPSE: collapse; width:100%;height:100%; cellSpacing:1; cellPadding:1 ;text-align:center}.bdr00 {width:11%;border-top:2px solid black; border-bottom:1px solid black;border-left:2px solid black; border-right:1px solid black}.bdr10 {width:11%;border-top:2px solid black; border-bottom:1px solid black;border-left:1px solid black; border-right:1px solid black}.bdr20 {width:11%;border-top:2px solid black; border-bottom:1px solid black;border-left:1px solid black; border-right:2px solid black}.bdr01 {width:11%;border-top:1px solid black; border-bottom:1px solid black;border-left:2px solid black; border-right:1px solid black}.bdr11 {width:11%;border-top:1px solid black; border-bottom:1px solid black;border-left:1px solid black; border-right:1px solid black}.bdr21 {width:11%;border-top:1px solid black; border-bottom:1px solid black;border-left:1px solid black; border-right:2px solid black}.bdr02 {width:11%;border-top:1px solid black; border-bottom:2px solid black;border-left:2px solid black; border-right:1px solid black}.bdr12 {width:11%;border-top:1px solid black; border-bottom:2px solid black;border-left:1px solid black; border-right:1px solid black}.bdr22 {width:11%;border-top:1px solid black; border-bottom:2px solid black;border-left:1px solid black; border-right:2px solid black}</style>";
+sHeader = "<div style='width:100%;text-align:center'><b>Sudoku for " + sTodaysDate + "</b><br><br>";
 
-        function gtag(){ dataLayer.push(arguments); }
+if (window.top!=window.self) 
+window.top.location="https://sudoku.com.au";
 
-        gtag('consent', 'default', {
-            'ad_storage': window.isShowPersonalAdv ? 'granted' : 'denied',
-            'analytics_storage': window.isShowAnalytics ? 'granted' : 'denied',
-            'ad_user_data': window.isShowPersonalAdv ? 'granted' : 'denied',
-            'ad_personalization': window.isShowPersonalAdv ? 'granted' : 'denied',
-            'wait_for_update': 500,
-        });
-    </script><script async data-ot-ignore src="https://www.googletagmanager.com/gtag/js?id=G-LKCCSV4WGG"></script><script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
+var iPlayerMoves = new Array(80);
+var iCurNum;
+iCurNum = 1;
+var sBGColor = '#e9e9e9';
+var sSqMarkColor = '#daffce';
+</script>
+</head>
+<body>
+  <form name="Form1" method="post" action="default.aspx?ID=1&amp;Go=Y" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE2NDc3NDUxNTdkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYGBSFDb21tQ29udHJvbDpjaGtWaWV3Q29tbWVudFR5cGVzOjAFIUNvbW1Db250cm9sOmNoa1ZpZXdDb21tZW50VHlwZXM6MQUhQ29tbUNvbnRyb2w6Y2hrVmlld0NvbW1lbnRUeXBlczoyBSFDb21tQ29udHJvbDpjaGtWaWV3Q29tbWVudFR5cGVzOjMFIUNvbW1Db250cm9sOmNoa1ZpZXdDb21tZW50VHlwZXM6NAUhQ29tbUNvbnRyb2w6Y2hrVmlld0NvbW1lbnRUeXBlczo00eyAwm3tucYaxcMWz2qDBk0ilIwTQ5wbrJ4ZOwYOLx8=" />
+<script type='text/javascript' id='publift-web-interstitial'>window.enablePubliftInterstitial = true;</script> <SCRIPT language="JavaScript">IsSupportingMember=false; </script>
+    <script async src="https://cdn.fuseplatform.net/publift/tags/2/1075/fuse.js"></script>
+<div width="100%">
+  <span id="txtAdHeader" class="d-none d-md-block"><div id='txtAdHeader' class='d-none d-md-block' >
+  <script type='text/javascript'>
+    var fusetag = fusetag || {
+      que: []
+    };
+    fusetag.que.push(function() {
+      fusetag.setTargeting('iwtf_channel', '30')
+    });
+  </script>
+  <!-- 71161633/CDYN_sudoku/sudo_hrec_1 -->
+  <div data-fuse='21691498637'></div>
+</div></span>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href='/' class='navbar-brand homepagelogo'>Sudoku Online</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-text">MENU</span> <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href='/archive.aspx'>Archive</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href='/printable.aspx'>Printable</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href='/blankgrids.aspx'>Blank Grids</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href='/members.aspx'>Members</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href='/ClipsList.aspx'>Forum</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href='/onlinegame.aspx'>Your Puzzles</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href='/Sudoku-Tips-and-Strategies.aspx'>Tips</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href='/contact.aspx'>Contact Us</a>
+    </li>
+  </ul>
+<ul id="loggedOutNavigation" class="navbar-nav ml-md-auto">
+<li class="nav-item">
+<a class='nav-link' href='/UserLogin.aspx'>Sign In</a>
+</li>
+<li class="nav-item">
+<a class='nav-link' href='/UserDetails.aspx'>Join</a>
+</li>
+</ul>
+</div>
+  </nav>
+  <span id="txtTimer" class="d-block d-lg-none"><input TYPE="hidden" VALUE="0" NAME="Timer_SecondsTaken" ID="Timer_SecondsTaken"><input TYPE="hidden" VALUE="No" NAME="Timer_SaveTime" ID="Timer_SaveTime">
+<div class="TimerBar no-gutters">
+  <div class="col-4 TimerLabel">
+    Timer
+  </div>
+  <div class="col-4 TimerTime">
+    00:00:00
+  </div>
+  <div class="col-4 TimerButtons">
+    <span class='btn btn-primary btn-xs TimerStart' onClick="stopwatch('Start');">
+      <svg version="1.1" viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" >
+       <path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124
+        c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884
+        C432.632,229.572,422.964,213.288,405.284,201.188z"/>
+      </svg> 
+      <span class="d-none d-sm-inline">Start</span>
+    </span>
+    <span class='btn btn-primary btn-xs d-none TimerPause' onClick="stopwatch('Pause');">
+      <svg version="1.1" id="Capa_1" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" >
+       <g>
+        <path d="M181.333,0H74.667c-17.643,0-32,14.357-32,32v448c0,17.643,14.357,32,32,32h106.667c17.643,0,32-14.357,32-32V32
+         C213.333,14.357,198.976,0,181.333,0z"/>
+       </g>
+       <g>
+        <path d="M437.333,0H330.667c-17.643,0-32,14.357-32,32v448c0,17.643,14.357,32,32,32h106.667c17.643,0,32-14.357,32-32V32
+         C469.333,14.357,454.976,0,437.333,0z"/>
+       </g>
+      </svg>
+      <span class="d-none d-sm-inline">Pause</span>
+    </span>
+    <span class='btn btn-secondary btn-xs' id='TimerReset' onClick="resetIt()">
+     Reset
+    </span>
+  </div>
+</div></span>
+  <main>
+    <div class="row">
+      <aside class="d-none d-lg-block col-0 col-lg-2" id="LeftSidebar">
+        <div id="txtPuzzleLinks" class="d-none d-lg-block bg-white p-2 small mb-3 mt-3 rounded">
+          <ul class="list-unstyled">
+            <li>Play this pic as a <a href='https://jigsawonline.net/M1-Y-2006-jigsaw.aspx'>Jigsaw</a> or <a href='https://slidingpuzzle.net?Go=M1-Y-2006'>Sliding Puzzle</a>.</li>
+            <li>Play sudoku on your <a href='/webmasters.aspx'>site/blog</a></li>
+          </ul>
+        </div>
+        <span id="txtTimer2" class="d-none d-lg-block"><input TYPE="hidden" VALUE="0" NAME="Timer_SecondsTaken" ID="Timer_SecondsTaken"><input TYPE="hidden" VALUE="No" NAME="Timer_SaveTime" ID="Timer_SaveTime">
+<div class="TimerBar no-gutters">
+  <div class="col-4 TimerLabel">
+    Timer
+  </div>
+  <div class="col-4 TimerTime">
+    00:00:00
+  </div>
+  <div class="col-4 TimerButtons">
+    <span class='btn btn-primary btn-xs TimerStart' onClick="stopwatch('Start');">
+      <svg version="1.1" viewBox="0 0 494.148 494.148" style="enable-background:new 0 0 494.148 494.148;" >
+       <path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124
+        c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884
+        C432.632,229.572,422.964,213.288,405.284,201.188z"/>
+      </svg> 
+      <span class="d-none d-sm-inline">Start</span>
+    </span>
+    <span class='btn btn-primary btn-xs d-none TimerPause' onClick="stopwatch('Pause');">
+      <svg version="1.1" id="Capa_1" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" >
+       <g>
+        <path d="M181.333,0H74.667c-17.643,0-32,14.357-32,32v448c0,17.643,14.357,32,32,32h106.667c17.643,0,32-14.357,32-32V32
+         C213.333,14.357,198.976,0,181.333,0z"/>
+       </g>
+       <g>
+        <path d="M437.333,0H330.667c-17.643,0-32,14.357-32,32v448c0,17.643,14.357,32,32,32h106.667c17.643,0,32-14.357,32-32V32
+         C469.333,14.357,454.976,0,437.333,0z"/>
+       </g>
+      </svg>
+      <span class="d-none d-sm-inline">Pause</span>
+    </span>
+    <span class='btn btn-secondary btn-xs' id='TimerReset' onClick="resetIt()">
+     Reset
+    </span>
+  </div>
+</div></span>
+        <div class="pt-3" id="leftAds">
+          
+          <span id="txtAdSkyscraper" class="d-none d-sm-block"><!-- 71161633/CDYN_sudoku/sudo_vrec_1 -->
+<div data-fuse="21691498640"></div></span>
+          <span id="txtQuickLinks" class="d-none d-sm-inline"></span>
+        </div>
+      </aside>
+      <div class="col-xs-12 col p-3" id="CentralColumn"><!-- central column --><noscript><B>Warning:</b> javascript is disabled in your browser. You must enable javascript to use the sudoku player on this site.</noscript>
+<div>
+  <span id="PuzzleTopNavigation" class="d-block text-center pb-2 small">
+    <a href="#Comments">
+      <span id="txtCommentText">Be the first to post a Comment</span>
+    </a>
+    &bull;
+    <a href='/5Y7-3-2024-sudoku.aspx' rel='nofollow' class='AbuseLink'>Previous Day's sudoku</a>
+    &bull;
+    <a href='/help.aspx'>Help</a>
+  </span>
+  <h1 class='text-center'>16x16 Sudoku for 8/March/2024</h1>
+</div>
+<div id="playgrid-wrapper">
+  <div class="row pb-2">
+    <div id="DifficultySettingSelector" class="col-6">
+      <button class="btn btn-light btn-xs dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" data-display="static" data-offset="0,10" aria-haspopup="true" aria-expanded="false">
+        <span class="d-none d-md-inline" id="difficulty-label">Difficulty:</span> 16x16
+      </button>
+      <div class="dropdown-menu ml-2" aria-labelledby="dropdownMenuButton" style="margin-top:3px;">
+        <a class="dropdown-item" href='/'>Easy</a>
+        <a class="dropdown-item" href='medium.aspx'>Medium</a>
+        <a class="dropdown-item" href='hard.aspx'>Hard</a>
+        <a class="dropdown-item" href='tough.aspx'>Tough</a>
+        <a class="dropdown-item" href='kids-easy-4x4.aspx'>Kids 4x4 Easy</a>
+        <a class="dropdown-item" href='kids-hard-4x4.aspx'>Kids 4x4 Hard</a>
+        <a class="dropdown-item" href='kids-easy-6x6.aspx'>Kids 6x6 Easy</a>
+        <a class="dropdown-item" href='kids-hard-6x6.aspx'>Kids 6x6 Hard</a>
+        <a class="dropdown-item" href='16x16.aspx'>16x16</a>
+        <a class="dropdown-item" href='parents.aspx'>Parents</a>
+      </div>
+    </div>
+    <div class="col-6 text-right">
+      <button type="button" class="btn btn-light btn-xs d-none d-sm-inline-block" data-toggle="modal" data-target="#settings-modal">
+        Size Settings
+      </button>
+    </div>
+  </div>
+  <!-- closed in playgridbottom -->
+  <!-- <div class="text-right" id="priority-play-options">
+    <button type="button" class="btn btn-light btn-xs d-none d-sm-inline-block" data-toggle="modal" data-target="#settings-modal">
+      Size Settings <i class="icon-cog"></i>
+    </button>
+  </div> -->
+  <div class="modal" id="settings-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Size Settings</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group row">
+            <div class="col">
+              <b>Board</b>
+            </div>
+            <div class="col-8">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="boardsize" id="boardsize-small" value="small">
+                <label class="form-check-label" for="boardsize-small">Small</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="boardsize" id="boardsize-medium" value="medium">
+                <label class="form-check-label" for="boardsize-medium">Medium</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="boardsize" id="boardsize-large" value="large">
+                <label class="form-check-label" for="boardsize-large">Large</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <b>Numbers</b>
+            </div>
+            <div class="col-8">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="numbersize" id="numbersize-small" value="small">
+                <label class="form-check-label" for="numbersize-small">Small</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="numbersize" id="numbersize-medium" value="medium">
+                <label class="form-check-label" for="numbersize-medium">Medium</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="numbersize" id="numbersize-large" value="large">
+                <label class="form-check-label" for="numbersize-large">Large</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <b>Possibility Numbers</b>
+            </div>
+            <div class="col-8">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="possibilitysize" id="possibilitysize-small" value="small">
+                <label class="form-check-label" for="possibilitysize-small">Small</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="possibilitysize" id="possibilitysize-medium" value="medium">
+                <label class="form-check-label" for="possibilitysize-medium">Medium</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="possibilitysize" id="possibilitysize-large" value="large">
+                <label class="form-check-label" for="possibilitysize-large">Large</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="save-size-settings">Save settings</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div id='sudokutableBox'>
+  <table class="sudokutable" data-size="16x16" id="sudokutable">
+    <tr>
+      <td width=6% id=T0 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T1 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T2 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T3 class=x16bdr20>&nbsp;</td>
+      <td width=6% id=T4 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T5 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T6 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T7 class=x16bdr20>&nbsp;</td>
+      <td width=6% id=T8 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T9 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T10 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T11 class=x16bdr20>&nbsp;</td>
+      <td width=6% id=T12 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T13 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T14 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T15 class=x16bdr20>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T16 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T17 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T18 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T19 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T20 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T21 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T22 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T23 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T24 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T25 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T26 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T27 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T28 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T29 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T30 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T31 class=x16bdr21>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T32 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T33 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T34 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T35 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T36 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T37 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T38 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T39 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T40 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T41 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T42 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T43 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T44 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T45 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T46 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T47 class=x16bdr21>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T48 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T49 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T50 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T51 class=x16bdr22>&nbsp;</td>
+      <td width=6% id=T52 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T53 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T54 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T55 class=x16bdr22>&nbsp;</td>
+      <td width=6% id=T56 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T57 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T58 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T59 class=x16bdr22>&nbsp;</td>
+      <td width=6% id=T60 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T61 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T62 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T63 class=x16bdr22>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T64 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T65 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T66 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T67 class=x16bdr20>&nbsp;</td>
+      <td width=6% id=T68 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T69 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T70 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T71 class=x16bdr20>&nbsp;</td>
+      <td width=6% id=T72 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T73 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T74 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T75 class=x16bdr20>&nbsp;</td>
+      <td width=6% id=T76 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T77 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T78 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T79 class=x16bdr20>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T80 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T81 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T82 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T83 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T84 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T85 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T86 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T87 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T88 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T89 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T90 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T91 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T92 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T93 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T94 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T95 class=x16bdr21>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T96 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T97 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T98 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T99 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T100 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T101 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T102 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T103 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T104 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T105 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T106 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T107 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T108 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T109 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T110 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T111 class=x16bdr21>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T112 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T113 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T114 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T115 class=x16bdr22>&nbsp;</td>
+      <td width=6% id=T116 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T117 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T118 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T119 class=x16bdr22>&nbsp;</td>
+      <td width=6% id=T120 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T121 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T122 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T123 class=x16bdr22>&nbsp;</td>
+      <td width=6% id=T124 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T125 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T126 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T127 class=x16bdr22>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T128 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T129 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T130 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T131 class=x16bdr20>&nbsp;</td>
+      <td width=6% id=T132 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T133 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T134 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T135 class=x16bdr20>&nbsp;</td>
+      <td width=6% id=T136 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T137 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T138 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T139 class=x16bdr20>&nbsp;</td>
+      <td width=6% id=T140 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T141 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T142 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T143 class=x16bdr20>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T144 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T145 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T146 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T147 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T148 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T149 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T150 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T151 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T152 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T153 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T154 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T155 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T156 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T157 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T158 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T159 class=x16bdr21>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T160 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T161 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T162 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T163 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T164 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T165 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T166 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T167 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T168 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T169 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T170 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T171 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T172 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T173 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T174 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T175 class=x16bdr21>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T176 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T177 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T178 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T179 class=x16bdr22>&nbsp;</td>
+      <td width=6% id=T180 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T181 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T182 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T183 class=x16bdr22>&nbsp;</td>
+      <td width=6% id=T184 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T185 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T186 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T187 class=x16bdr22>&nbsp;</td>
+      <td width=6% id=T188 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T189 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T190 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T191 class=x16bdr22>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T192 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T193 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T194 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T195 class=x16bdr20>&nbsp;</td>
+      <td width=6% id=T196 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T197 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T198 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T199 class=x16bdr20>&nbsp;</td>
+      <td width=6% id=T200 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T201 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T202 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T203 class=x16bdr20>&nbsp;</td>
+      <td width=6% id=T204 class=x16bdr00>&nbsp;</td>
+      <td width=6% id=T205 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T206 class=x16bdr10>&nbsp;</td>
+      <td width=6% id=T207 class=x16bdr20>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T208 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T209 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T210 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T211 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T212 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T213 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T214 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T215 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T216 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T217 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T218 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T219 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T220 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T221 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T222 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T223 class=x16bdr21>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T224 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T225 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T226 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T227 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T228 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T229 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T230 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T231 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T232 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T233 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T234 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T235 class=x16bdr21>&nbsp;</td>
+      <td width=6% id=T236 class=x16bdr01>&nbsp;</td>
+      <td width=6% id=T237 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T238 class=x16bdr11>&nbsp;</td>
+      <td width=6% id=T239 class=x16bdr21>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=6% id=T240 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T241 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T242 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T243 class=x16bdr22>&nbsp;</td>
+      <td width=6% id=T244 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T245 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T246 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T247 class=x16bdr22>&nbsp;</td>
+      <td width=6% id=T248 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T249 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T250 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T251 class=x16bdr22>&nbsp;</td>
+      <td width=6% id=T252 class=x16bdr02>&nbsp;</td>
+      <td width=6% id=T253 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T254 class=x16bdr12>&nbsp;</td>
+      <td width=6% id=T255 class=x16bdr22>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id='hideDiv' style='display:none;Z-INDEX:2; FILTER:progid:DXImageTransform.Microsoft.Alpha(opacity=0); WIDTH:640px; HEIGHT:640px; moz-opacity:0.99'>
+  <img id='PrizePic' src="Prizes/Y1.jpg" style="display:none;LEFT: 0px; WIDTH: 640px; TOP: 0px; HEIGHT: 640px"></div>
+<div id="Grabber" class="Grabber16x16">
+  <p class="d-none d-md-block">Choose a number, and place it in the grid above.</p>
+  <table class=Numbertable>
+    <tr>
+      <td width=6% id=Num0>&nbsp;</td>
+      <td width=6% id=Num1>1</td>
+      <td width=6% id=Num2>2</td>
+      <td width=6% id=Num3>3</td>
+      <td width=6% id=Num4>4</td>
+      <td width=6% id=Num5>5</td>
+      <td width=6% id=Num6>6</td>
+      <td width=6% id=Num7>7</td>
+      <td width=6% id=Num8>8</td>
+      <td width=6% id=Num9>9</td>
+      <td width=6% id=NumA>A</td>
+      <td width=6% id=NumB>B</td>
+      <td width=6% id=NumC>C</td>
+      <td width=6% id=NumD>D</td>
+      <td width=6% id=NumE>E</td>
+      <td width=5% id=NumF>F</td>
+      <td width=5% id=NumG>G</td>
+    </tr>
+  </table>
+</div>
+    
+</div><!-- closes playgrid-wrapper-->
+<div id='RealhideDiv' style='display:none;background-size: cover;background-repeat: no-repeat;background-image: url("/Prizes/Y1.jpg");'>
+</div>
+<div class="form-group form-check row">
+  <div class="text-center pt-1">
+    <input type="checkbox" class="form-check-input" id="PossibilityMode" />
+    <label for="PossibilityMode" class="form-check-label">This number is a possibility</label>
+  </div>
+</div>
+<div id="GameControls" class='mb-4'>
+  <div class="row no-gutters">
+    <div class="col-4 col-md-3 p-1">
+      <input type="button" class="btn btn-secondary btn-xs btn-block" title='Undoes the last move' value="Undo" id="btnUndo" onClick='LoadUndo()'>
+    </div>
+    <div class="col-4 col-md-3 p-1">
+      <input type="button" class="btn btn-secondary btn-xs btn-block" title='Checks for any incorrect moves' value="Check Moves" id="btnCheckSol" onClick='CheckSolution(false)' />
+    </div>
+    
+    
+    <div class="col-4 col-md-3 p-1" id="btnLockNumbers">
+      <input type="button" class="btn btn-secondary btn-xs btn-block" title='Press this when you have entered all the numbers from the newspaper' value="Lock Numbers" onClick='LockNumbers()'>   
+    </div>
+    <div class="col-4 col-md-3 p-1">
+      <input type="button" class="btn btn-secondary btn-xs btn-block" title='Saves the game as a cookie on your computer' value="Save Game" id="btnSaveGame" onClick='SaveGame()'>
+    </div>
+    <div class="col-4 col-md-3 p-1">
+      <input type="button" class="btn btn-secondary btn-xs btn-block" title='Loads a game that you have already saved' value="Load Game" id="btnLoadGame" onClick='LoadGame()'>
+    </div>
+    <div class="col-4 col-md-3 p-1">
+      <input type="button" class="btn btn-secondary btn-xs btn-block" title='Shows the full solution' value="Show Solution" id="btnFullSol" onClick='ShowFullSolution()'>
+    </div>
+    <div class="col-4 col-md-3 p-1">
+      <input type="button" class="btn btn-secondary btn-xs btn-block" title='Clears the grid of all moves' value="Reset" id="btnReset" onClick='ResetBoard()'>
+    </div>
+    <div class="col-4 col-md-3 p-1">
+      <input type="button" class="btn btn-secondary btn-xs btn-block" title='Clears the grid of just the possibilites/pencil marks' value="Reset Poss." id="btnResetPoss" onClick='ResetPoss()'>
+    </div>
+  </div>
+  <div class="form-check mt-3">
+    <INPUT TYPE=CHECKBOX class="form-check-input" id="RemovePossibilties" onClick="javascript:SetDefaults()">
+    <label class="form-check-label" for="RemovePossibilties">Automatically remove Possibilities</label>
+  </div>
+  <div class="form-check">
+    <INPUT TYPE=CHECKBOX class="form-check-input" id="AllowIncorrectMoves" onClick="javascript:SetDefaults()">
+    <label class="form-check-label" for="AllowIncorrectMoves">Allow incorrect Moves</label>
+  </div>
+  <div class="form-check">
+    <INPUT CHECKED TYPE=CHECKBOX class="form-check-input" id="PlaceMovesWithMouse" onClick="javascript:SetDefaults()">
+    <label class="form-check-label" for="PlaceMovesWithMouse">Clicking the playing grid places the current number</label>
+  </div>
+  <div class="form-check">
+    <INPUT TYPE=CHECKBOX class="form-check-input" id="HighlightCurrSquare" onClick="javascript:SetDefaults()">
+    <label class="form-check-label" for="HighlightCurrSquare">Highlight Current Square</label>
+  </div>
+  <div class="form-check">
+    <INPUT TYPE=CHECKBOX class="form-check-input" id="GreyUsedNumbers" onClick="javascript:SetDefaults()">
+    <label class="form-check-label" for="GreyUsedNumbers">Grey out Used Numbers</label>
+  </div>
+  <div class="form-check">
+    <INPUT TYPE=CHECKBOX class="form-check-input" id="GridPossibilities" onClick="javascript:SetDefaults()">
+    <label class="form-check-label" for="GridPossibilities">Possibilities in Grid Format</label>
+  </div>
+</div>
+<script type="text/javascript">
+  ReadDefaults();
+  PlayInit();
+</script><div id="BigAd" class="mb-2 d-sm-block d-md-none" style="height: 270px;">
+      <!-- 71161633/CDYN_sudoku/sudo_mrec_1 -->
+<div data-fuse="21691498643"></div></div>
+    
+<div class='TeaserBox'><div class='TeaserHead'>Check out the latest post in the <a class='Link11' href='ClipsList.aspx'>Sudoku Forum</a></div><br><a class='Link11' href='QXV20-7-1990-0-Watch-Amazing-Blindfold-Sudoku.aspx'>Watch Amazing Blindfold Sudoku Solving Video</a><br><br>Submitted by: <a class='Link11' href='UserPage.aspx?Go=E29-3-1947&UID=66519'>basscom4life</a></div>
+    
+<P></P>
+    
+<script src="includes/comments7.js" type="text/javascript"></script>
+<div style='display: block; text-align: center; margin-top: 40px'>
+  <a name="Comments"><b>Comments</b></a>
+</div>
+<table style="margin-bottom: 1rem">
+  <tr>
+    <td colspan="2">
+      <div id='CommExplanation' class="alert alert-info"></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <div style='padding-left: 5px; padding-top: 10px; padding-bottom: 0px;'>Indicate which comments you would like to be able to see</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <table id="CommControl_chkViewCommentTypes" class="CommentTypes" border="0">
+<tr>
+<td><input id="CommControl_chkViewCommentTypes_0" type="checkbox" name="CommControl:chkViewCommentTypes:0" checked="checked" /><label for="CommControl_chkViewCommentTypes_0">General</label></td><td><input id="CommControl_chkViewCommentTypes_2" type="checkbox" name="CommControl:chkViewCommentTypes:2" checked="checked" /><label for="CommControl_chkViewCommentTypes_2">Jokes</label></td><td><input id="CommControl_chkViewCommentTypes_4" type="checkbox" name="CommControl:chkViewCommentTypes:4" checked="checked" /><label for="CommControl_chkViewCommentTypes_4">Other</label></td>
+</tr><tr>
+<td><input id="CommControl_chkViewCommentTypes_1" type="checkbox" name="CommControl:chkViewCommentTypes:1" checked="checked" /><label for="CommControl_chkViewCommentTypes_1">Sudoku Technique/Question</label></td><td><input id="CommControl_chkViewCommentTypes_3" type="checkbox" name="CommControl:chkViewCommentTypes:3" checked="checked" /><label for="CommControl_chkViewCommentTypes_3">Recipes</label></td><td></td>
+</tr>
+</table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <input type="submit" name="CommControl:btnSaveCommentTypePrefs" value="Show Comments" id="CommControl_btnSaveCommentTypePrefs" class="btn btn-primary btn-sm" />
+    </td>
+  </tr>
+</table>
+<input name="CommControl:intAbuseItem" type="hidden" id="CommControl_intAbuseItem" />
+<input name="CommControl:intDeleteItem" type="hidden" id="CommControl_intDeleteItem" />
+<span id="CommControl_txtError" style="color:Red;"></span>
+<div id="CommControl_PagerTop"></div>
+<table cellspacing="0" rules="all" border="0" border="1" id="CommControl_dgComments" style="border-collapse:collapse;margin-top: 30px; border-color: #fff">
+</table>
+<div id="CommControl_PagerBottom"></div>
+<script type="text/javascript">
+  document.getElementById('CommExplanation').innerHTML = "Talk about anything and everything, but place your comments in the right categories so that people on slow internet connections can still enjoy the site. Also, be nice to each other - you don't have to agree, but this is not the place for personal attacks. As Sir Paul McCartney said: <i>'I used to think anyone doing anything weird was weird. Now I know that it is the people that call others weird that are weird'</i> (<a href='postingguidelines.aspx'>longer explanation</a>). Enjoy!";
+  var SendToAFriendID;
+  SendToAFriendID = '5Y8-3-2024-sudoku.aspx?p=1A4095';
+  var CurrPageID;
+  CurrPageID = 'Y8-3-2024';
+  document.getElementById('CommControl_intAbuseItem').value = '';
+  AbuseSet();
+  FlashCheck();
+</script>
 
-        gtag('js', new Date());
-        gtag('config', 'G-LKCCSV4WGG', {
-            'anonymize_ip': true,
-            'site_speed_sample_rate': 100,
-            
-        });
+<div id="CommControl_NonMemberMessage" class="card bg-light">
+  <div class="card-body">
+    <h5 class="card-title">Please <a href='/UserLogin.aspx'>Log in</a> to post a comment.</h5>
+    <p><b>Not a member? Joining is quick and free.</b> As a member you get heaps of benefits.</p>
+    <a class='btn btn-primary' href='/UserDetails.aspx'>Join Now</a>
+    <a class='btn btn-primary' href='/UserDetails.aspx'>Login</a>
+  </div>
+</div>
 
-        
-            </script><script src="https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js" data-language="en" type="text/javascript" charset="UTF-8" data-domain-script="fe088241-0d4c-4376-9dfd-3a7b876838e6"></script><script type="text/javascript">
-            function OptanonWrapper() {
-                window.cookieBanner && window.cookieBanner.update();
-            }
-        </script><script>
-            window.lang = 'en';
-            window.serverDate = new Date(1709823079 * 1000);
-            window.useLimitationHintsAndMistakes = Boolean(1);
-            window.googleImaLangCode = 'en';
-            window.useSmartHints = Boolean(1);
-            window.useETS = Boolean(1);
-            window.useRiseNewDesign = Boolean(window.abGroups['ab_rise'] === 'ab_rise_b');
-            window.usePubmatic = Boolean(1);
-            window.useIndexExchange = Boolean(1);
-            window.useTriplelift = Boolean(1);
-            window.useAbHint = Boolean(1) || Boolean(window.abGroups['ab_hints_new'] === 'ab_hints_new_on') || Boolean(window.abGroups['ab_hints_old'] === 'ab_hints_old_on');
-            window.useInterInProgress = Boolean(window.abGroups['ab_gameinter_new'] === 'ab_gameinter_new_on') || Boolean(window.abGroups['ab_gameinter_old'] === 'ab_gameinter_old_on') || Boolean();
-            window.useXandr = Boolean(1);
-            window.useTappx = Boolean();
-            window.useMinuteMedia = Boolean(1);
-            window.useMagnite = Boolean(1);
-            window.useMultiFormatApstag = Boolean();
-            window.useAdditionalSmartHints = window.abGroups['ab_newsmarthints_mobile'] === 'ab_newsmarthints_mobile_on' || window.abGroups['ab_newsmarthints_desktop'] === 'ab_newsmarthints_desktop_on' || Boolean();
-            window.useSizeMapping = Boolean();
-            window.useFullScreenInter = Boolean();
-            window.userFilledScreenInter = Boolean();
-            window.useBannerRefreshOnRender = Boolean();
-            window.useSmaato = Boolean(1);
-            window.useWideWinScreen = Boolean();
-            window.useTournamentsView = Boolean(1);
-            window.useImaInter = Boolean(1);
-            window.useSharethrough = Boolean(1);
-            window.useAniviewInterstitial = Boolean();
-            window.useAniviewVideoAds = Boolean();
-            window.useAniviewRewarded = Boolean();
-            window.useVidazoo = Boolean(1);
+<img id='testimg' src='https://sudoku.com.au/Pics/testlinesmall.gif'>
+<input name="CommControl:blnNoImages" type="hidden" id="CommControl_blnNoImages" />
+<script type="text/javascript">
+  var iR;
+  iR = Math.round(Math.random() * 999999);
+  document.getElementById('testimg').src = 'https://sudoku.com.au/Pics/testline.gif?r=' + iR;
+</script>
+<script type='text/javascript'>
+</script>
+    </div><!-- close central column -->
+<aside class="col pt-5 pt-sm-3" id="Sidebar">
+<a span class="btn btn-secondary d-block d-sm-none mb-3" href="#txtTimer">Back to Top</a>
+<div id="txtRightBar" class="InsideBar" Width="100%"><div>
+  
+  <ul class="nav nav-pills nav-justified">
+    <li class='nav-item'><a id=EasyLabel class='AAlwaysOnBNSM nav-link EasyLabel' href='/'>Easy</a></li><li class='nav-item'><a id=MediumLabel class='AAlwaysOnBNSM nav-link MediumLabel' href='medium.aspx'>Medium</a></li><li class='nav-item'><a id=HardLabel class='AAlwaysOnBNSM nav-link HardLabel' href='hard.aspx'>Hard</a></li><li class='nav-item'><a id=ToughLabel class='AAlwaysOnBNSM nav-link ToughLabel' href='tough.aspx'>Tough</a></li>
+  </ul>
+  <p>Or try the <a class='AAlwaysOnBNSM' href='kids-easy-4x4.aspx'>Kids Sudokus</a> (4x4 &amp; 6x6),<a id=x16Label class='AAlwaysOnBNSM' href='16x16.aspx'>16x16</a> or the <a id=ParentsPageLabel class='AAlwaysOnBNSM' href='parents.aspx'>Parent's Page</a>.</p>
+</div>
+<script language="Javascript">
+  //Set Easy,Medium, Hard
+  for (var i = 0; i < document.querySelectorAll('.x16Label').length; i++ ) {document.querySelectorAll('.x16Label')[i].className += ' active'}
+sPrintDescription='16x16';
+ButtonsDisable16x16();
 
-            window.translations = {
-                days: 'd',
-                hours: 'h',
-                minutes: 'm',
-                progress: '{0}/{1}',
-                tournamentsDaysTimer: '{days}d {hours}h',
-                tournamentsHoursTimer: '{hours}h {minutes}m',
-                tournamentsMinutesTimer: '{minutes}m {seconds}s', 
-            };
+</script>
+<h6>Printer Friendly versions:</h6>
+<ul>
+  <li>
+    <a class=AAlwaysOnB href='javascript:PrintPuzzle(false,false)'>Just the Sudoku</a>&nbsp;&nbsp;
+    <a class=AAlwaysOnB href='javascript:PrintPuzzle(false,true)'>(New Window)</a>
+  </li>
+  <li>
+    <a class=AAlwaysOnB href='javascript:PrintPuzzle(true,false)'>With Solution</a>&nbsp;&nbsp;
+    <a class=AAlwaysOnB href='javascript:PrintPuzzle(true,true)'>(New Window)</a>
+  </li>
+</ul>
+<div>
+  <label>Small Grid <input type="radio" name="gridsize" id="gridsize_small" checked=""></label>
+  <label>Large Grid <input type="radio" name="gridsize" id="gridsize_large"></label>
+</div></div>
+<script type="text/javascript">
+function NoAdsSubmit() {
+document.getElementById("NoAds").value = "NOAds"
+window.location = "default.asp"
+}
+</script>
+<div>
+<span id="txtNoAdsButton"></span><input id="NoAds" type="hidden" value="Ads" name="NoAds">
+</div>
+<div class="ad-container pb-2">
+<span id="txtAdRectangle"><!-- 71161633/CDYN_sudoku/sudo_mrec_1 -->
+<div data-fuse="21691498643"></div></span>
+</div>
+<span id="txtMyAds"><div class='InsideBar'><!-- google_ad_section_start(weight=ignore) -->
+<a href='/userdetails.aspx?t=tell' style='display:inline'>
+  <img src="/Pics/goodies.jpg" class="HeadingImage" style="width: 58px; height: 53px;" border=0>
+  <h6 style='display:inline;margin-left:10px'>Members Get Goodies!</h6>
+</a>
+<p>Become a member and get heaps of stuff, including: NO ADs, online solving tools, save your times, smilies and more! (Free and Paid options)</p>
+<div style='text-align:center'>
+<a class="btn btn-primary" href="/userdetails.aspx?t=tell" role="button">Find Out More</a>
+</div>
+<!-- google_ad_section_end --></div></span>
 
-            window.deviceType = 'desktop';
-
-            document.documentElement.style.setProperty('--vh', document.documentElement.clientHeight + 'px');
-            document.documentElement.style.setProperty('--vw', document.documentElement.clientWidth + 'px');
-            document.documentElement.style.setProperty('--mg', (Math.min(Math.max((document.documentElement.clientHeight - 130) - (document.documentElement.clientWidth + 110), 0), 30) / 3) + 'px');
-            // window.addEventListener('resize', function() {
-            //     document.documentElement.style.setProperty('--vh', window.innerHeight + 'px');
-            //     document.documentElement.style.setProperty('--vw', window.innerWidth + 'px');
-            //     document.documentElement.style.setProperty('--mg', (Math.min(Math.max((window.innerHeight - 130) - (window.innerWidth + 110), 0), 30) / 3) + 'px');
-            // });
-        </script><script async data-ot-ignore src="/prebid8.33.0.js"></script><script async data-ot-ignore src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script>
-                //load the apstag.js library
-                !function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;A.setAttributeNode(p.createAttribute('data-ot-ignore'));g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
-
-                window.googletag = window.googletag || {cmd: []};
-
-                var apstagConfig = {
-                    pubID: 'fe919bf4-53c9-430b-a909-4cfd2cc391e9',
-                    adServer: 'googletag',
-                    bidTimeout: 2e3,
-                    simplerGPT: window.useSizeMapping
-                };
-
-                if (window.useMultiFormatApstag) apstagConfig.videoAdServer = 'DFP';
-
-                apstag.init(apstagConfig);
-            </script><script>
-        window.useWinscreenBanners = Boolean(1);
-        window.lang = 'en';
-        window.difficulty = 'easy';
-        window.mode = 'classic';
-
-        window.riseRateCallback = function(rateData) {
-            console.log("========== Rise auction rate: "+JSON.stringify(rateData));
-        }
-
-        window.arrayOfTranslateDates = [
-                            'January {0}',
-                            'February {0}',
-                            'March {0}',
-                            'April {0}',
-                            'May {0}',
-                            'June {0}',
-                            'July {0}',
-                            'August {0}',
-                            'September {0}',
-                            'October {0}',
-                            'November {0}',
-                            'December {0}',
-                    ];
-
-        window.smartHintTranslation = {
-            'LastFreeCell': {
-                name: 'Last Free Cell',
-                desc: {
-                    row: ['Let\'s look at [c1]this row[/c1]', 'There is only one free cell left, and (N) is the only number that may be added to this cell'],
-                    col: ['Let\'s look at [c1]this column[/c1]', 'There is only one free cell left, and (N) is the only number that may be added to this cell'],
-                    cube: ['Let\'s look at [c1]this block[/c1]', 'There is only one free cell left, and (N) is the only number that may be added to this cell']
-                }
-            },
-            'LastRemainingCell': {
-                name: 'Last Remaining Cell',
-                desc:  {
-                    row: ['Pay attention to [c2]these cells[/c2] and the highlighted areas', 'In [c1]this row[/c1], there is only one cell remaining that can contain (N)', 'Since it is the only possible option, this cell must be (N)'],
-                    col: ['Pay attention to [c2]these cells[/c2] and the highlighted areas', 'In [c1]this column[/c1], there is only one cell remaining that can contain (N)', 'Since it is the only possible option, this cell must be (N)'],
-                    cube: ['Pay attention to [c2]these cells[/c2] and the highlighted areas', 'In [c1]this block[/c1], there is only one cell remaining that can contain (N)', 'Since it is the only possible option, this cell must be (N)']
-                }
-            },
-            'LastPossibleNumber': {
-                name: 'Last Possible Number',
-                desc: ['Pay attention to [c1]this cell[/c1] and the numbers in the highlighted areas', 'Numbers [c2](N), (N), (N), (N), (N), (N), (N),[/c2] and [c2](N)[/c2] are already used in its row, column, or block', 'Since the only number missing is (N), this cell must be (N)']
-            },
-            'Notes': {
-                name: 'Notes',
-                desc: ['Notes in these cells are missing or filled in incorrectly', 'To proceed with the solution, all possible numbers for each cell have to be filled in correctly as notes']
-            },
-            'FreeCell': {
-                name: 'Free Cell',
-                desc: ['Select [c1]a cell[/c1] you\'d like to solve']
-            },
-            'IncorrectNumber': {
-                name: 'Incorrect Numbers',
-                desc: ['This sudoku puzzle has only one possible solution, and the numbers in these cells do not match the solution', 'To find the right solution, it is important to first determine all possibilities']
-            },
-            'ObviousSingles': {
-                name: 'Obvious Singles',
-                desc: ['Pay attention to [c1]this cell[/c1]. It contains only one possible solution', 'Since it is the only possible option, this cell must be [c1](N)[/c1]']
-            },
-            'ObviousPairs': {
-                name: 'Obvious Pairs',
-                desc: {
-                    row: ['Pay attention to [c1]this row[/c1] and these cells', 'These cells contain only [c1](N)[/c1] and [c1](N)[/c1]. This means that [c1](N)[/c1] must be added to [c1]one[/c1] of these cells and [c1](N)[/c1] must be added to [c1]the other[/c1].', 'Therefore, [c1](N)[/c1] and [c1](N)[/c1] cannot be added to any other cell in this row'],
-                    col: ['Pay attention to [c1]this column[/c1] and these cells', 'These cells contain only [c1](N)[/c1] and [c1](N)[/c1]. This means that [c1](N)[/c1] must be added to [c1]one[/c1] of these cells and [c1](N)[/c1] must be added to [c1]the other[/c1].', 'Therefore, [c1](N)[/c1] and [c1](N)[/c1] cannot be added to any other cell in this column'],
-                    cube: ['Pay attention to [c1]this block[/c1] and these cells', 'These cells contain only [c1](N)[/c1] and [c1](N)[/c1]. This means that [c1](N)[/c1] must be added to [c1]one[/c1] of these cells and [c1](N)[/c1] must be added to [c1]the other[/c1].', 'Therefore, [c1](N)[/c1] and [c1](N)[/c1] cannot be added to any other cell in this block'],
-                }
-            },
-            'ObviousTriples': {
-                name: 'Obvious Triples',
-                desc: {
-                    row: ['Pay attention to [c1]this row[/c1] and these cells', '[c2]These cells[/c2] contain only [c2](N)[/c2], [c2](N)[/c2], and [c2](N)[/c2]. This means that each of these numbers must be added to one of these cells.', 'Therefore, [c3](N)[/c3], [c3](N)[/c3], and [c3](N)[/c3] cannot be added to any other cell in this row'],
-                    col: ['Pay attention to [c1]this column[/c1] and these cells', '[c2]These cells[/c2] contain only [c2](N)[/c2], [c2](N)[/c2], and [c2](N)[/c2]. This means that each of these numbers must be added to one of these cells.', 'Therefore, [c3](N)[/c3], [c3](N)[/c3], and [c3](N)[/c3] cannot be added to any other cell in this column'],
-                    cube: ['Pay attention to [c1]this block[/c1] and these cells', '[c2]These cells[/c2] contain only [c2](N)[/c2], [c2](N)[/c2], and [c2](N)[/c2]. This means that each of these numbers must be added to one of these cells.', 'Therefore, [c3](N)[/c3], [c3](N)[/c3], and [c3](N)[/c3] cannot be added to any other cell in this block'],
-                }
-            },
-            'HiddenSingles': {
-                name: 'Hidden Singles',
-                desc: {
-                    row: ['Pay attention to [c1]this row[/c1]', 'There is only one cell that may contain [c1](N)[/c1]', 'Since it is the only possible option, this cell must be [c1](N)[/c1]'],
-                    col: ['Pay attention to [c1]this column[/c1]', 'There is only one cell that may contain [c1](N)[/c1]', 'Since it is the only possible option, this cell must be [c1](N)[/c1]'],
-                    cube: ['Pay attention to [c1]this block[/c1]', 'There is only one cell that may contain [c1](N)[/c1]', 'Since it is the only possible option, this cell must be [c1](N)[/c1]']
-                }
-            },
-            'HiddenPairs': {
-                name: 'Hidden Pairs',
-                desc: {
-                    row: ['Pay attention to [c1]this row[/c1] and these cells', 'Only these cells contain [c2](N)[/c2] and [c2](N)[/c2]. This means that [c2](N)[/c2] must be added to one of these cells and [c2](N)[/c2] must be added to the other.', 'Therefore, no other numbers from the notes can be added to these cells, only [c2](N)[/c2] and [c2](N)[/c2]'],
-                    col: ['Pay attention to [c1]this column[/c1] and these cells', 'Only these cells contain [c2](N)[/c2] and [c2](N)[/c2]. This means that [c2](N)[/c2] must be added to one of these cells and [c2](N)[/c2] must be added to the other.', 'Therefore, no other numbers from the notes can be added to these cells, only [c2](N)[/c2] and [c2](N)[/c2]'],
-                    cube: ['Pay attention to [c1]this block[/c1] and these cells', 'Only these cells contain [c2](N)[/c2] and [c2](N)[/c2]. This means that [c2](N)[/c2] must be added to one of these cells and [c2](N)[/c2] must be added to the other.', 'Therefore, no other numbers from the notes can be added to these cells, only [c2](N)[/c2] and [c2](N)[/c2]'],
-                }
-            },
-            'PointingPairs': {
-                name: 'Pointing Pairs',
-                desc: {
-                    row: ['Pay attention to [c1]this block[/c1] and these cells', 'All cells that may contain [c2](N)[/c2] within this block belong to one row', 'Within this block, [c2](N)[/c2] will be added to one of these cells. Therefore, [c2](N)[/c2] cannot be added to any other cell in this row.'],
-                    col: ['Pay attention to [c1]this block[/c1] and these cells', 'All cells that may contain [c2](N)[/c2] within this block belong to one column', 'Within this block, [c2](N)[/c2] will be added to one of these cells. Therefore, [c2](N)[/c2] cannot be added to any other cell in this column.'],
-                    cube_row: ['Pay attention to [c1]this row[/c1] and these cells', 'All cells that may contain [c2](N)[/c2] within this row belong to one block', 'Within this row, [c2](N)[/c2] will be added to one of these cells. Therefore, [c2](N)[/c2] cannot be added to any other cell in this block.'],
-                    cube_col: ['Pay attention to [c1]this column[/c1] and these cells', 'All cells that may contain [c2](N)[/c2] within this column belong to one block', 'Within this column, [c2](N)[/c2] will be added to one of these cells. Therefore, [c2](N)[/c2] cannot be added to any other cell in this block.']
-                }
-            }
-        };
-    </script><script src="/build/runtime.a04e93eb.js"></script><script src="/build/banner-ads.9cfd22e4.js"></script><script>
-        window.PAGE_GPT_BANNERS = [
-            // main_leaderboard
-            {
-                setting: 'banner_show_main_leaderboard',
-                device: 'desktop',
-                path: '/21796148150/main_leaderboard_desktop_v2',
-                blockId: 'div-gpt-ad-1634890953983-0',
-                sizes: [[468, 60], 'fluid', [728, 90]],
-                videoSizes: [[320, 180]],
-                sizeMapper: [
-                    { minViewPort: [1200, window.abGroups['ab_mainbanner'] === 'ab_mainbanner_desktop_top' ? 200 : 600], sizes: window.abGroups['ab_mainbanner'] === 'ab_mainbanner_desktop_top' ? [[728, 90]] : [[728, 90], 'fluid'] },
-                    { minViewPort: [1000, window.abGroups['ab_mainbanner'] === 'ab_mainbanner_desktop_top' ? 200 : 600], sizes: window.abGroups['ab_mainbanner'] === 'ab_mainbanner_desktop_top' ? [[728, 90], [468, 60]] : [[728, 90], [468, 60], 'fluid'] },
-                    { minViewPort: [700, window.abGroups['ab_mainbanner'] === 'ab_mainbanner_desktop_top' ? 100 : 400], sizes: [[468, 60]] },
-                    { minViewPort: [0, 0], sizes: [] },
-                ],
-            },
-            // main_square
-            {
-                setting: 'banner_show_main_square',
-                device: 'tablet',
-                path: '/21796148150/main_square_tablet',
-                blockId: 'div-gpt-ad-1634891271285-0',
-                sizes: [[300, 100], [300, 50], 'fluid', [300, 250]],
-                videoSizes: [[300, 250]],
-                sizeMapper: [
-                    { minViewPort: [1070, 350], sizes: [[300, 100], [300, 50], 'fluid', [300, 250]] },
-                    { minViewPort: [0, 0], sizes: [] },
-                ],
-            },
-            {
-                setting: 'banner_show_main_square',
-                device: 'desktop',
-                path: '/21796148150/main_square_desktop',
-                blockId: 'div-gpt-ad-1634891177200-0',
-                sizes: [[300, 100], [300, 50], [300, 250], 'fluid'],
-                videoSizes: [[300, 250]],
-                sizeMapper: [
-                    { minViewPort: [1070, 350], sizes: [[300, 100], [300, 50], [300, 250], 'fluid'] },
-                    { minViewPort: [0, 0], sizes: [] },
-                ],
-            },
-            // main_low_square_desktop
-            {
-                setting: 'banner_show_main_low_square',
-                device: 'desktop',
-                path: '/21796148150/main_low_square_desktop',
-                blockId: 'div-gpt-ad-1656502141840-0',
-                sizes: [[300, 100], [300, 250], 'fluid', [300, 50]],
-                videoSizes: [[300, 250]],
-                disableCondition: window.abGroups['ab_rightbanner'] === 'ab_rightbanner_off',
-                sizeMapper: [
-                    { minViewPort: [1070, 700], sizes: [[300, 100], [300, 250], 'fluid', [300, 50]] },
-                    { minViewPort: [0, 0], sizes: [] },
-                ],
-            },
-            // skyscraper_desktop
-            {
-                setting: 'banner_show_skyscraper',
-                device: 'desktop',
-                path: '/21796148150/skyscraper_desktop',
-                blockId: 'div-gpt-ad-1656502856214-0',
-                sizes: [[160, 600], 'fluid'],
-                sizeMapper: [
-                    { minViewPort: [1580, 700], sizes: window.abGroups['ab_leftbanner'] === 'ab_leftbanner_desktop_off' ? [] : [[160, 600], 'fluid'] },
-                    { minViewPort: [1070, 700], sizes: [] },
-                    { minViewPort: [768, 700], sizes: [[160, 600], 'fluid'] },
-                    { minViewPort: [0, 0], sizes: [] },
-                ],
-            },
-            {
-                setting: 'use_google_instead_rise',
-                blockId: 'div-gpt-ad-1692015232669-0',
-                path: '/21796148150/phone_web_banner',
-                disableCondition: window.useAniviewVideoAds,
-                sizes: [[300, 50], [320, 50], [300, 100], [300, 250], [728, 90], 'fluid'],
-                videoSizes: [[300, 250]],
-                sizeMapper: [
-                    { minViewPort: [748, 200], sizes: [[300, 50], [320, 50], [300, 100], [300, 250], [728, 90], 'fluid'] },
-                    { minViewPort: [340, 200], sizes: [[300, 50], [320, 50], [300, 100], [300, 250], 'fluid'] },
-                    { minViewPort: [320, 200], sizes: [[300, 50], [300, 100], [300, 250], 'fluid'] },
-                    { minViewPort: [0, 0], sizes: [] },
-                ],
-            }
-        ];
-        window.PAGE_GPT_REWARD = {
-            name: (window.eb && window.eb.settings && window.eb.settings['ima_ads_test_tag']) ? '/22639388115/rewarded_web_example' : '/21796148150/web_reward'
-        };
-        window.PAGE_GPT_INTER = {
-            name: (window.eb && window.eb.settings && window.eb.settings['ima_ads_test_tag']) ? '/6355419/Travel/Europe/France/Paris' : '/21796148150/ingame_interstitial'
-        };
-    </script><script>
-            window.adBanners.init(window.PAGE_GPT_BANNERS, window.PAGE_GPT_REWARD, window.PAGE_GPT_INTER);
-        </script><script data-ot-ignore src="https://sdk.streamrail.com/wrapper/hb.loader.js?wrapper_id=6139cc2f9bbbfe0001896624&org=6134e9fa9bbbfe0001894c98"></script></head><body id="body" class="new-layout  device-desktop smart-hints  main-page lang-en  classic new-win-banner"><header id="masthead" class="site-header" role="banner"><div class="container"><nav id="main-navigation" class="main-navigation" role="navigation"><div class="main-navigation-wrapper"><div id="mode-menu" class="main-navigation-item mode-menu"><div id="mode-menu-label" class="mode-menu-label"><div class="mode">
-Classic
-</div><div class="dropdown-arrow icon-arrow-dropdown"></div><select id="mode-menu-select" class="mode-menu-select"><option value="/" selected>
-Classic
-</option><option value="/killer">
-Killer
-</option></select></div><div id="mode-menu-dropdown" class="mode-menu-dropdown"><ul><li class="mode-menu-item"><a class="active" href="/"><svg class="icon-mode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><g fill="none" fill-rule="evenodd"><path fill="#325aaf" d="M20 2c1.657 0 3 1.343 3 3v15c0 1.657-1.343 3-3 3H5c-1.657 0-3-1.343-3-3V5c0-1.657 1.343-3 3-3h15zM8.999 16H4v4c0 .552.448 1 1 1h3.999v-5zm6 0h-5v5h5v-5zM21 16h-5.001v5H20c.552 0 1-.448 1-1v-4zM8.999 10H4v5h4.999v-5zm6 0h-5v5h5v-5zM21 10h-5.001v5H21v-5zm-2.498 1.587c.552 0 1 .448 1 1 0 .553-.448 1-1 1-.553 0-1-.447-1-1 0-.552.447-1 1-1zM8.999 4H5c-.552 0-1 .448-1 1v4h4.999V4zm6 0h-5v5h5V4zM20 4h-4.001v5H21V5c0-.552-.448-1-1-1zM6.5 5.5c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1z" /></g></svg><span>Classic</span></a></li><li class="mode-menu-item"><a class href="/killer"><svg class="icon-mode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><g fill="none" fill-rule="evenodd"><path fill="#325aaf" d="M20 2c1.657 0 3 1.343 3 3v15c0 1.657-1.343 3-3 3H5c-1.657 0-3-1.343-3-3V5c0-1.657 1.343-3 3-3h15zM8.98 4H5c-.552 0-1 .448-1 1v10.013h.477v1H4V20c0 .552.448 1 1 1h15c.552 0 1-.448 1-1v-3.987h-.035v-1H21V5c0-.552-.448-1-1-1H9.98v.5h-1V4zm6.985 14.001v2h-1v-2h1zm0-3v.012h1v1h-1v.988h-1v-2h1zm-7-.502l1 .002-.002 1.513H8.477v-1h.486l.002-.515zm-1.488.515v1h-2v-1h2zm12.488 0v1h-2v-1h2zm-4-3.013v2h-1v-2h1zm2.36-.42c.552 0 1 .447 1 1 0 .552-.448 1-1 1-.553 0-1-.448-1-1 0-.553.447-1 1-1zm-9.356-.082l1 .002-.003 2-1-.002.003-2zm6.996-2.496V11h-1V9.504v.5l-.003-1 1.003-.001zm-6.991-.504l1 .002-.002.512h.99l.002 1h-.993v.488l-1-.002v-.484l-.007.001-.002-1 .01-.001.002-.516zm4.988.508l.002 1-2 .003-.002-1 2-.003zM8.978 5.499l1 .002-.003 2-1-.002.003-2zm-2.43-.045c.553 0 1 .448 1 1s-.447 1-1 1c-.552 0-1-.448-1-1s.448-1 1-1z" /></g></svg><span>Killer</span></a></li></ul></div></div><div class="nav-menu-item main-navigation-item tournament-link"><a href="/tournaments" class="tournament_header-link "><span class="tournament_header-timer">00h 00m</span><span>Tournament</span></a></div><div class="nav-menu-item main-navigation-item dc-link"><a href="/challenges" id="dc-link" class=" "><span>Daily Challenge</span></a></div><div class="nav-menu-item main-navigation-item awards-link"><a href="/awards" class><span>Awards</span></a></div><div class="nav-menu-item main-navigation-item rules-link flexible-link"><a href="/sudoku-rules/" class><span>Rules</span></a></div><div class="nav-menu-item main-navigation-item printable-link flexible-link"><a href="/sudoku-printable" class><span>Printable Sudoku</span></a></div><div class="nav-menu-item main-navigation-item solver-link flexible-link"><a href="/sudoku-solver" class><span>Solver</span></a></div><div class="nav-menu-item main-navigation-item tips-link flexible-link"><a href="/how-to-play/" class><span>Tips</span></a></div><div class="nav-menu-item main-navigation-item more-menu-link"><ul class="more-menu-dropdown"><li class="submenu-more-link"><a href="/sudoku-printable" class>
-Printable Sudoku
-</a></li><li class="submenu-more-link"><a href="/sudoku-solver" class>
-Solver
-</a></li><li class="submenu-more-link"><a href="/how-to-play/" class>
-Tips
-</a></li></ul><a href="#" class="more-menu-open "><span>More</span></a></div><div id="lang-menu" class="main-navigation-item lang-menu"><div class="lang-menu_label"><div class="icon-flag flag-en"></div><div class="language">English</div><div class="arrow"></div><select class="lang-menu_select"><option value="/" selected>
-English
-</option><option value="/jp">
-日本語
-</option><option value="/it">
-Italiano
-</option><option value="/zh">
-中文
-</option><option value="/de">
-Deutsch
-</option><option value="/fr">
-Français
-</option><option value="/es">
-Español
-</option><option value="/pt">
-Português
-</option><option value="/tr">
-Türk
-</option><option value="/pl">
-Polski
-</option><option value="/ko">
-한국인
-</option><option value="/th">
-ไทย
-</option><option value="/vi">
-Tiếng Việt
-</option><option value="/ar">
-عربى
-</option><option value="/mx">
-Español (México)
-</option><option value="/br">
-Português (Brasil)
-</option><option value="/tw">
-中文（T）
-</option><option value="/ru">
-Русский
-</option></select></div><div class="lang-menu_dropdown"><ul><li class="lang-menu-item"><a href="/" title="English"><div class="icon-flag flag-en"></div><span>English</span></a></li><li class="lang-menu-item"><a href="/jp" title="日本語"><div class="icon-flag flag-jp"></div><span>日本語</span></a></li><li class="lang-menu-item"><a href="/it" title="Italiano"><div class="icon-flag flag-it"></div><span>Italiano</span></a></li><li class="lang-menu-item"><a href="/zh" title="中文"><div class="icon-flag flag-zh"></div><span>中文</span></a></li><li class="lang-menu-item"><a href="/de" title="Deutsch"><div class="icon-flag flag-de"></div><span>Deutsch</span></a></li><li class="lang-menu-item"><a href="/fr" title="Français"><div class="icon-flag flag-fr"></div><span>Français</span></a></li><li class="lang-menu-item"><a href="/es" title="Español"><div class="icon-flag flag-es"></div><span>Español</span></a></li><li class="lang-menu-item"><a href="/pt" title="Português"><div class="icon-flag flag-pt"></div><span>Português</span></a></li><li class="lang-menu-item"><a href="/tr" title="Türk"><div class="icon-flag flag-tr"></div><span>Türk</span></a></li><li class="lang-menu-item"><a href="/pl" title="Polski"><div class="icon-flag flag-pl"></div><span>Polski</span></a></li><li class="lang-menu-item"><a href="/ko" title="한국인"><div class="icon-flag flag-ko"></div><span>한국인</span></a></li><li class="lang-menu-item"><a href="/th" title="ไทย"><div class="icon-flag flag-th"></div><span>ไทย</span></a></li><li class="lang-menu-item"><a href="/vi" title="Tiếng Việt"><div class="icon-flag flag-vi"></div><span>Tiếng Việt</span></a></li><li class="lang-menu-item"><a href="/ar" title="عربى"><div class="icon-flag flag-ar"></div><span>عربى</span></a></li><li class="lang-menu-item"><a href="/mx" title="Español (México)"><div class="icon-flag flag-mx"></div><span>Español (México)</span></a></li><li class="lang-menu-item"><a href="/br" title="Português (Brasil)"><div class="icon-flag flag-br"></div><span>Português (Brasil)</span></a></li><li class="lang-menu-item"><a href="/tw" title="中文（T）"><div class="icon-flag flag-tw"></div><span>中文（T）</span></a></li><li class="lang-menu-item"><a href="/ru" title="Русский"><div class="icon-flag flag-ru"></div><span>Русский</span></a></li></ul></div></div><div class="main-navigation-item social-menu"><ul><li><a href="https://www.facebook.com/sudoku.easybrain/" rel="noreferrer noopener" title="Follow us on Facebook" target="_blank"><svg class="icon icon-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"><g fill="none" fill-rule="evenodd"><rect width="35" height="35" fill="#1877F2" rx="17.5" /><path fill="#FFF" fill-rule="nonzero" d="M13.28 18.62h1.94v7.3c0 .14.12.26.28.26h3.28c.16 0 .28-.11.28-.26v-7.27h2.23c.14 0 .26-.1.28-.23l.34-2.69a.24.24 0 00-.07-.2.3.3 0 00-.21-.09h-2.56v-1.68c0-.51.3-.77.88-.77h1.68c.15 0 .28-.12.28-.26v-2.47c0-.14-.13-.26-.28-.26h-2.41c-.4 0-1.8.07-2.9 1a2.64 2.64 0 00-1 2.47v1.97h-2.04c-.15 0-.28.12-.28.26v2.66c0 .14.13.26.28.26z" /></g></svg></a></li></ul></div></div></nav><div id="burger-icon" class="burger-icon"><div class="icon-menu"></div><div class="icon-close"></div></div><div class="logo-sudoku-wrapper"><a class="logo logo-sudoku" href="/" title="Play Free Sudoku, a Popular Online Puzzle Game" rel="home"></a></div><ul class="ref-mode-menu"><li class="ref-mode-menu-item"><a class="active" href="/"><span>Classic</span></a></li><li class="ref-mode-menu-item"><a class href="/killer"><span>Killer</span></a></li></ul><div class="new-game-button-wrapper"><div id="new-game-button" class="button main-game-button new-game-button">New Game</div><div class="new-game-menu tab-classic"><div class="new-game-menu-content"><div class="new-game-menu-header">
-Select Game Mode
-</div><div class="new-game-menu-subheader">
-Current game progress will be lost
-</div><div class="new-game-menu-mode-buttons"><div class="new-game-menu-mode-button active" data-mode="classic">
-Classic
-</div><div class="new-game-menu-mode-button " data-mode="killer">
-Killer
-</div></div></div><div class="new-game-menu-content new-game-menu-classic"><div class="new-game-menu-difficulty-block"><a href="/easy/" id="link-easy-classic" class="new-game-menu-button" data-difficulty="easy" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Easy</span></a><a href="/medium/" id="link-medium-classic" class="new-game-menu-button" data-difficulty="medium" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Medium</span></a><a href="/hard/" id="link-hard-classic" class="new-game-menu-button" data-difficulty="hard" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Hard</span></a><a href="/expert/" id="link-expert-classic" class="new-game-menu-button" data-difficulty="expert" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Expert</span></a><a href="/evil/" id="link-evil-classic" class="new-game-menu-button" data-difficulty="evil" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Master</span></a><div class="new-game-menu-button new-game-menu-restart"><span class="new-game-menu-icon icon-restart"></span><span>
-Restart
-</span></div></div></div><div class="new-game-menu-content new-game-menu-killer"><div class="new-game-menu-difficulty-block"><a href="/killer/easy/" id="link-easy-killer" class="new-game-menu-button" data-difficulty="easy" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Easy</span></a><a href="/killer/medium/" id="link-medium-killer" class="new-game-menu-button" data-difficulty="medium" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Medium</span></a><a href="/killer/hard/" id="link-hard-killer" class="new-game-menu-button" data-difficulty="hard" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Hard</span></a><a href="/killer/expert/" id="link-expert-killer" class="new-game-menu-button" data-difficulty="expert" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Expert</span></a><div class="new-game-menu-button new-game-menu-restart"><span class="new-game-menu-icon icon-restart"></span><span>
-Restart
-</span></div></div></div><div class="new-game-menu-content new-game-menu-daily"><div class="new-game-menu-difficulty-block"><div class="new-game-menu-button new-game-menu-continue daily-continue"><span class="new-game-menu-icon icon-daily"></span><span>
-Continue
-</span></div><div class="new-game-menu-button new-game-menu-restart"><span class="new-game-menu-icon icon-restart"></span><span>
-Restart
-</span></div></div></div><div class="tooltip-arrow"></div></div></div></div></header><div class="game-over global"><div class="game-over_new-game"><div class="new-game-menu tab-classic "><div class="new-game-menu-content"><div class="new-game-menu-header">
-Select Game Mode
-</div><div class="new-game-menu-subheader">
-Current game progress will be lost
-</div><div class="new-game-menu-mode-buttons"><div class="new-game-menu-mode-button active" data-mode="classic">
-Classic
-</div><div class="new-game-menu-mode-button " data-mode="killer">
-Killer
-</div></div></div><div class="new-game-menu-content new-game-menu-classic"><div class="new-game-menu-difficulty-block"><a href="/easy/" id="link-easy-classic" class="new-game-menu-button" data-difficulty="easy" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Easy</span></a><a href="/medium/" id="link-medium-classic" class="new-game-menu-button" data-difficulty="medium" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Medium</span></a><a href="/hard/" id="link-hard-classic" class="new-game-menu-button" data-difficulty="hard" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Hard</span></a><a href="/expert/" id="link-expert-classic" class="new-game-menu-button" data-difficulty="expert" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Expert</span></a><a href="/evil/" id="link-evil-classic" class="new-game-menu-button" data-difficulty="evil" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Master</span></a><div class="new-game-menu-button new-game-menu-restart"><span class="new-game-menu-icon icon-restart"></span><span>
-Restart
-</span></div></div></div><div class="new-game-menu-content new-game-menu-killer"><div class="new-game-menu-difficulty-block"><a href="/killer/easy/" id="link-easy-killer" class="new-game-menu-button" data-difficulty="easy" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Easy</span></a><a href="/killer/medium/" id="link-medium-killer" class="new-game-menu-button" data-difficulty="medium" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Medium</span></a><a href="/killer/hard/" id="link-hard-killer" class="new-game-menu-button" data-difficulty="hard" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Hard</span></a><a href="/killer/expert/" id="link-expert-killer" class="new-game-menu-button" data-difficulty="expert" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Expert</span></a><div class="new-game-menu-button new-game-menu-restart"><span class="new-game-menu-icon icon-restart"></span><span>
-Restart
-</span></div></div></div><div class="new-game-menu-content new-game-menu-daily"><div class="new-game-menu-difficulty-block"><div class="new-game-menu-button new-game-menu-continue daily-continue"><span class="new-game-menu-icon icon-daily"></span><span>
-Continue
-</span></div><div class="new-game-menu-button new-game-menu-restart"><span class="new-game-menu-icon icon-restart"></span><span>
-Restart
-</span></div></div></div></div><button class="game-over_cancel cancelMistakesClose">Cancel</button></div><div class="game-over_body"><div class="game-over_title">Game Over</div><div class="game-over_desc">You have made 3 mistakes and lost this game</div><button class="game-over_btn mistakesSecondChance without-ads">Second Chance</button><a class="game-over_close mistakesCloseGame" href="#">New Game</a></div></div><div class="container site-content-wrapper"><div id="primary" class="site-content" role="main"><div id="sudoku-wrapper" class="sudoku-wrapper loading"><div id="ima-container" class="ima-container"><div id="ima-play-btn" class="ima-play-wrap"><div class="ima-play-flex-wrap"><div class="ima-play-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70"><g fill="none" fill-rule="evenodd"><path d="M0 0h70v70H0z" /><path fill="#325aaf" d="M35 5a30 30 0 110 60 30 30 0 010-60z" /><path fill="#FFF" d="M45.07 37.05l-13.14 9.2A2.5 2.5 0 0128 44.2V25.8a2.5 2.5 0 013.93-2.05l13.14 9.2a2.5 2.5 0 010 4.1z" /><path fill="#A9CFFF" d="M57 0h3a10 10 0 110 20h-3a10 10 0 110-20z" /><path fill="#325aaf" fill-rule="nonzero" d="M52.8 14l.6-2.12h2.65l.6 2.12h1.47l-2.55-7.85h-1.64L51.38 14h1.41zm2.93-3.22h-2l.28-.96.36-1.27.33-1.32h.05l.34 1.31c.12.44.24.87.37 1.28l.27.96zM61.27 14c.58 0 1.1-.08 1.56-.25a3.1 3.1 0 001.92-2c.17-.49.26-1.06.26-1.71 0-1.3-.34-2.27-1-2.92a3.88 3.88 0 00-2.82-.97h-2.1V14h2.18zm-.17-1.13h-.61V7.28h.6c.8 0 1.41.22 1.84.66.44.44.65 1.14.65 2.1 0 .97-.21 1.68-.64 2.14-.43.46-1.04.7-1.84.7z" /></g></svg></div><div id="ima-play-heading" class="ima-play-heading">
-Play Ad
-</div><div id="ima-play-text" class="ima-play-text">
-Ads help us keep our game free
-</div></div></div></div><div class="tournament_popup desktop"><div class="tournament_popup_body"><div class="tournament_popup_title">
-Tournament Completed
-</div><div class="tournament_popup_carousel"><div class="tournament_popup_item active"><img id="finish-medal" class="lazy-award-popup" src="/img/img-tournament-completed.png" srcset="/img/img-tournament-completed.png 1x, /img/img-tournament-completed@2x.png 2x" alt="medals"><div class="tournament_popup_item_text lose-text">
-You&#039;ve completed the tournament but haven&#039;t won a medal. Try again next time!
-</div><div class="tournament_popup_item_text win-text">
-You&#039;ve completed the tournament and won a medal!
-</div><button class="button tournament_popup_btn" data-action="close">OK</button></div></div></div></div><div class="smart-hint local"></div><div class="game-over local"><div class="game-over_new-game"><div class="new-game-menu tab-classic "><div class="new-game-menu-content"><div class="new-game-menu-header">
-Select Game Mode
-</div><div class="new-game-menu-subheader">
-Current game progress will be lost
-</div><div class="new-game-menu-mode-buttons"><div class="new-game-menu-mode-button active" data-mode="classic">
-Classic
-</div><div class="new-game-menu-mode-button " data-mode="killer">
-Killer
-</div></div></div><div class="new-game-menu-content new-game-menu-classic"><div class="new-game-menu-difficulty-block"><a href="/easy/" id="link-easy-classic" class="new-game-menu-button" data-difficulty="easy" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Easy</span></a><a href="/medium/" id="link-medium-classic" class="new-game-menu-button" data-difficulty="medium" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Medium</span></a><a href="/hard/" id="link-hard-classic" class="new-game-menu-button" data-difficulty="hard" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Hard</span></a><a href="/expert/" id="link-expert-classic" class="new-game-menu-button" data-difficulty="expert" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Expert</span></a><a href="/evil/" id="link-evil-classic" class="new-game-menu-button" data-difficulty="evil" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Master</span></a><div class="new-game-menu-button new-game-menu-restart"><span class="new-game-menu-icon icon-restart"></span><span>
-Restart
-</span></div></div></div><div class="new-game-menu-content new-game-menu-killer"><div class="new-game-menu-difficulty-block"><a href="/killer/easy/" id="link-easy-killer" class="new-game-menu-button" data-difficulty="easy" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Easy</span></a><a href="/killer/medium/" id="link-medium-killer" class="new-game-menu-button" data-difficulty="medium" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Medium</span></a><a href="/killer/hard/" id="link-hard-killer" class="new-game-menu-button" data-difficulty="hard" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Hard</span></a><a href="/killer/expert/" id="link-expert-killer" class="new-game-menu-button" data-difficulty="expert" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Expert</span></a><div class="new-game-menu-button new-game-menu-restart"><span class="new-game-menu-icon icon-restart"></span><span>
-Restart
-</span></div></div></div><div class="new-game-menu-content new-game-menu-daily"><div class="new-game-menu-difficulty-block"><div class="new-game-menu-button new-game-menu-continue daily-continue"><span class="new-game-menu-icon icon-daily"></span><span>
-Continue
-</span></div><div class="new-game-menu-button new-game-menu-restart"><span class="new-game-menu-icon icon-restart"></span><span>
-Restart
-</span></div></div></div></div><button class="game-over_cancel cancelMistakesClose">Cancel</button></div><div class="game-over_body"><div class="game-over_title">Game Over</div><div class="game-over_desc">You have made 3 mistakes and lost this game</div><button class="game-over_btn mistakesSecondChance without-ads">Second Chance</button><a class="game-over_close mistakesCloseGame" href="#">New Game</a></div></div><div class="lost-progress-parent"><div class="lost-progress"><div class="lost-progress_title">
-Start New Game
-</div><div class="lost-progress_desc">
-Current game progress will be lost
-</div><div class="lost-progress_buttons"><button class="button" id="lost-progress-ok">OK</button><button class="button transparent" id="lost-progress-cancel">Cancel</button></div><div class="lost-progress_ask"><label class="checkbox"><input type="checkbox" id="dont-ask-again-progress" name="dont-ask-again-progress"><span class="checkbox-icon"></span><span class="checkbox_text">Don&#039;t ask me again</span></label></div></div></div><div class="game-info-wrapper flex-wrapper"><div class="ref-start-game"><div class="ref-start-game_title">
-Difficulty:
-</div><div class="ref-start-game_items"><a href="/easy/" class="start-new-game-button active" data-difficulty="easy" data-mode="classic">
-Easy
-</a><a href="/medium/" class="start-new-game-button " data-difficulty="medium" data-mode="classic">
-Medium
-</a><a href="/hard/" class="start-new-game-button " data-difficulty="hard" data-mode="classic">
-Hard
-</a><a href="/expert/" class="start-new-game-button " data-difficulty="expert" data-mode="classic">
-Expert
-</a><a href="/evil/" class="start-new-game-button " data-difficulty="evil" data-mode="classic">
-Master
-</a></div></div><div id="difficulty-menu" class="difficulty-wrap"><div class="difficulty-text">Difficulty: </div><div id="difficulty-menu-label" class="difficulty-label"><span id="difficulty-menu-label-text" class="difficulty-label-text">
-Easy
-</span><div class="dropdown-arrow icon-arrow-dropdown"></div><div id="difficulty-menu-dropdown" class="difficulty-menu difficulty-menu-dropdown"><ul><li class="difficulty-menu-item"><a href="/easy/" data-difficulty="easy">
-Easy
-</a></li><li class="difficulty-menu-item"><a href="/medium/" data-difficulty="medium">
-Medium
-</a></li><li class="difficulty-menu-item"><a href="/hard/" data-difficulty="hard">
-Hard
-</a></li><li class="difficulty-menu-item"><a href="/expert/" data-difficulty="expert">
-Expert
-</a></li><li class="difficulty-menu-item"><a href="/evil/" data-difficulty="evil">
-Master
-</a></li></ul></div><select id="difficulty-menu-select" class="difficulty-menu-select"><option data-difficulty="easy" value="/easy/" selected>
-Easy
-</option><option data-difficulty="medium" value="/medium/">
-Medium
-</option><option data-difficulty="hard" value="/hard/">
-Hard
-</option><option data-difficulty="expert" value="/expert/">
-Expert
-</option><option data-difficulty="evil" value="/evil/">
-Master
-</option></select></div></div><div class="game-info-wrapper_stats"><div class="mistakes-counter">
-Mistakes: <span class="mistakes-counter_info"><span id="mistakesCounterCurrent">0</span>/<span id="mistakesCounterAll">3</span></span></div><div class="score">
-Score: <span class="score-value">0</span></div><div class="check-mistakes-wrapper hide"><label class="check-mistakes"><span class="label-text">
-Auto-Check for Mistakes
-</span><span class="switch check-mistakes-switch active"><input class="checkMistakes" type="checkbox" checked /><span class="switch-pin"><div class="icon-check-mistakes"></div></span></span></label></div><div id="timer-wrapper" class="timer-wrapper"><span id="timer" class="timer">00:00</span><div class="timer-pause"><div class="icon icon-pause"></div><div class="icon icon-play"></div></div></div></div></div><div id="game-wrapper" class="game-flex-wrapper"><div class="new-winscreen"><div class="confetti-wrapper"><img class="confetti c-1 game-lazy" data-src="/img/confetti1.png" data-srcset="/img/confetti1.png 1x, /img/confetti1@2x.png 2x" alt="confetti"><img class="confetti c-2 game-lazy" data-src="/img/confetti2.png" data-srcset="/img/confetti2.png 1x, /img/confetti2@2x.png 2x" alt="confetti"><img class="confetti c-3 game-lazy" data-src="/img/confetti3.png" data-srcset="/img/confetti3.png 1x, /img/confetti3@2x.png 2x" alt="confetti"></div><div class="new-winscreen_column left"><img class="new-winscreen_image_rays" src="/img/rays.png" srcset="/img/rays.png 1x, /img/rays@2x.png 2x"><div class="new-winscreen_title">
-Excellent!
-</div><div class="new-winscreen_image"><svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Game_Field</title><g id="Solver-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Game_Field"><rect id="background" stroke="#000000" stroke-width="2" fill="#000000" x="1" y="1" width="498" height="498"></rect><g id="Box-1" transform="translate(2, 2)"><g id="Box_bg" fill="#BEC6D4"><polygon id="White_bg" points="0 164 164 164 164 0 0 0"></polygon></g><g id="Cell-1" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-2" transform="translate(55, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-3" transform="translate(110, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-4" transform="translate(0, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-5" transform="translate(55, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-6" transform="translate(110, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-7" transform="translate(0, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-8" transform="translate(55, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-9" transform="translate(110, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g></g><g id="Box-2" transform="translate(168, 2)"><g id="Box_bg" fill="#9A9A9A"><polygon id="White_bg" points="0 164 164 164 164 0 0 0"></polygon></g><g id="Cell-1" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-2" transform="translate(55, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-3" transform="translate(110, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-4" transform="translate(0, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-5" transform="translate(55, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-6" transform="translate(110, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-7" transform="translate(0, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-8" transform="translate(55, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-9" transform="translate(110, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g></g><g id="Box-3" transform="translate(334, 2)"><g id="Box_bg" fill="#9A9A9A"><polygon id="White_bg" points="0 164 164 164 164 0 0 0"></polygon></g><g id="Cell-1" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-2" transform="translate(55, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-3" transform="translate(110, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-4" transform="translate(0, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-5" transform="translate(55, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-6" transform="translate(110, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-7" transform="translate(0, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-8" transform="translate(55, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-9" transform="translate(110, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g></g><g id="Box-4" transform="translate(2, 168)"><g id="Box_bg" fill="#9A9A9A"><polygon id="White_bg" points="0 164 164 164 164 0 0 0"></polygon></g><g id="Cell-1" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-2" transform="translate(55, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-3" transform="translate(110, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-4" transform="translate(0, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-5" transform="translate(55, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-6" transform="translate(110, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-7" transform="translate(0, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-8" transform="translate(55, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-9" transform="translate(110, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g></g><g id="Box-5" transform="translate(168, 168)"><g id="Box_bg" fill="#9A9A9A"><polygon id="White_bg" points="0 164 164 164 164 0 0 0"></polygon></g><g id="Cell-1" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-2" transform="translate(55, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-3" transform="translate(110, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-4" transform="translate(0, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-5" transform="translate(55, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-6" transform="translate(110, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-7" transform="translate(0, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-8" transform="translate(55, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-9" transform="translate(110, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g></g><g id="Box-6" transform="translate(334, 168)"><g id="Box_bg" fill="#9A9A9A"><polygon id="White_bg" points="0 164 164 164 164 0 0 0"></polygon></g><g id="Cell-1" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-2" transform="translate(55, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-3" transform="translate(110, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-4" transform="translate(0, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-5" transform="translate(55, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-6" transform="translate(110, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-7" transform="translate(0, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-8" transform="translate(55, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-9" transform="translate(110, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g></g><g id="Box-7" transform="translate(2, 334)"><g id="Box_bg" fill="#9A9A9A"><polygon id="White_bg" points="0 164 164 164 164 0 0 0"></polygon></g><g id="Cell-1" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-2" transform="translate(55, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-3" transform="translate(110, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-4" transform="translate(0, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-5" transform="translate(55, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-6" transform="translate(110, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-7" transform="translate(0, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-8" transform="translate(55, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-9" transform="translate(110, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g></g><g id="Box-8" transform="translate(168, 334)"><g id="Box_bg" fill="#9A9A9A"><polygon id="White_bg" points="0 164 164 164 164 0 0 0"></polygon></g><g id="Cell-1" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-2" transform="translate(55, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-3" transform="translate(110, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-4" transform="translate(0, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-5" transform="translate(55, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-6" transform="translate(110, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-7" transform="translate(0, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-8" transform="translate(55, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-9" transform="translate(110, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g></g><g id="Box-9" transform="translate(334, 334)"><g id="Box_bg" fill="#9A9A9A"><polygon id="White_bg" points="0 164 164 164 164 0 0 0"></polygon></g><g id="Cell-1" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-2" transform="translate(55, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-3" transform="translate(110, 0)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-4" transform="translate(0, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-5" transform="translate(55, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-6" transform="translate(110, 55)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-7" transform="translate(0, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-8" transform="translate(55, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g><g id="Cell-9" transform="translate(110, 110)" fill="#FFFFFF"><polygon id="Fill-1" points="0 54 54 54 54 0 0 0"></polygon></g></g></g></g></svg><div class="fake-board"></div></div></div><div class="new-winscreen_column right"><div class="tournament-stats"><div class="tournament-stats_header"><span>
-Tournament Positions
-</span><a href="/tournaments">See All</a></div><div class="tournament-stats_body"><span class="tournament-stats_body-title">
-Total Score
-</span><span class="tournament-stats_body-val"><span class="tournament-stats_widget"><svg class="triangle" width="6px" height="4px" viewBox="0 0 6 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Indicators-/-Trends-/-Trend---Up-(S)" transform="translate(-4, -6)" fill="#FFFFFF"><g id="Inner" transform="translate(4, 1)"><g id="Arrow-Up" transform="translate(-0, 5)"><g id="Triangle" transform="translate(0, 0)"><path d="M3.384,0.512 L5.424,3.232 C5.58305801,3.44407734 5.54007734,3.74494199 5.328,3.904 C5.24491384,3.96631462 5.1438577,4 5.04,4 L0.96,4 C0.69490332,4 0.48,3.78509668 0.48,3.52 C0.48,3.4161423 0.513685378,3.31508616 0.576,3.232 L2.616,0.512 C2.77505801,0.299922656 3.07592266,0.256941992 3.288,0.416 C3.32438672,0.44329004 3.35670996,0.47561328 3.384,0.512 Z" transform="translate(3, 2) rotate(-360) translate(-3, -2)"></path></g></g></g></g></g></svg><span id="tournament-place">1</span></span><span id="tournament-ts">0</span></span></div></div><div class="win-stats"><div class="win-stats-item hidden win-score"><div class="win-stats-icon"><svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="none" d="M0 0h26v26H0z" /><path d="M13 4.04a9 9 0 1 1 0 18 9 9 0 0 1 0-18zm-.057 4.17c-.18 0-.342.11-.417.28l-1.083 2.485-2.594.31a.463.463 0 0 0-.384.328.494.494 0 0 0 .126.5l1.924 1.847-.519 2.677a.49.49 0 0 0 .18.482.444.444 0 0 0 .494.03l2.273-1.344 2.273 1.344a.442.442 0 0 0 .494-.03.49.49 0 0 0 .18-.482l-.52-2.677 1.925-1.846a.494.494 0 0 0 .125-.5.463.463 0 0 0-.383-.328l-2.594-.31L13.36 8.49a.457.457 0 0 0-.416-.28z" fill="#FFF" /></g></svg></div><div class="win-stats-text"><div class="win-stats-label">
-Score
-</div><div class="win-stats-value score-value">0</div></div></div><div class="win-stats-item"><div class="win-stats-icon"><svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="none" d="M0 0h26v26H0z" /><path d="M20.958 23h-3c-.55 0-1-.462-1-1.027V5.027c0-.565.45-1.027 1-1.027h3c.55 0 1 .462 1 1.027v16.946c0 .565-.45 1.027-1 1.027M14 23h-3c-.55 0-1-.475-1-1.055v-10.89c0-.58.45-1.055 1-1.055h3c.55 0 1 .475 1 1.055v10.89c0 .58-.45 1.055-1 1.055m-7 0H4c-.55 0-1-.427-1-.949V17.95c0-.522.45-.949 1-.949h3c.55 0 1 .427 1 .949v4.102c0 .522-.45.949-1 .949" fill="#FFF" /></g></svg></div><div class="win-stats-text"><div class="win-stats-label">
-Difficulty
-</div><div class="win-difficulty win-stats-value"><span class="win-difficulty-value win-difficulty-easy">Easy</span><span class="win-difficulty-value win-difficulty-medium">Medium</span><span class="win-difficulty-value win-difficulty-hard">Hard</span><span class="win-difficulty-value win-difficulty-expert">Expert</span><span class="win-difficulty-value win-difficulty-evil">Master</span></div></div></div><div class="win-stats-item"><div class="win-stats-icon"><svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="none" d="M0 0h26v26H0z" /><path d="M13 7.991a8 8 0 1 1 0 16.001 8 8 0 0 1 0-16zm4.888 3.294a.972.972 0 0 0-1.375 0l-4.228 4.228a.973.973 0 1 0 1.376 1.376l4.227-4.228a.972.972 0 0 0 0-1.376zM15.56 3c.795 0 1.44.671 1.44 1.5S16.355 6 15.56 6h-5.12C9.645 6 9 5.329 9 4.5S9.645 3 10.44 3h5.12z" fill="#FFF" /></g></svg></div><div class="win-stats-text"><div class="win-stats-label">
-Time
-</div><div class="win-stats-value win-time-value">00:00</div></div></div></div></div><div class="win-banner"></div></div><div class="loading-screen"><svg class="spinner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path id="Oval-3" fill="#D0D9E4" d="M25 0a25 25 0 1021.4 12.07l-2.52 1.61c2.03 3.16 3.05 6.93 3.05 11.32 0 15.5-13.32 22-21.93 22C11.78 47 3 36.14 3 25 3 13.44 12.17 3 25 3V0z" /></svg><div class="loading-label">Loading game</div></div><div class="game-wrapper"><div id="pause-overlay" class="pause-overlay"><svg xmlns="http://www.w3.org/2000/svg" class="icon-play-big" viewBox="0 0 60 60"><g fill="none" fill-rule="evenodd"><circle cx="30" cy="30" r="30" fill="#325aaf" /><path fill="#FFF" d="M39.12 31.98l-12.56 8.64a2.4 2.4 0 01-3.76-1.98V21.36a2.4 2.4 0 013.76-1.97l12.56 8.63a2.4 2.4 0 010 3.96z" /></g></svg></div><div id="win-overlay" class="win-overlay"><div class="confetti-wrapper"><img class="confetti c-1 game-lazy" data-src="/img/confetti1.png" data-srcset="/img/confetti1.png 1x, /img/confetti1@2x.png 2x" alt="confetti"><img class="confetti c-2 game-lazy" data-src="/img/confetti2.png" data-srcset="/img/confetti2.png 1x, /img/confetti2@2x.png 2x" alt="confetti"><img class="confetti c-3 game-lazy" data-src="/img/confetti3.png" data-srcset="/img/confetti3.png 1x, /img/confetti3@2x.png 2x" alt="confetti"></div><div class="win-flags-wrapper"><div class="win-flags win-flags-1"></div><div class="win-flags win-flags-2"></div><div class="win-flags win-flags-3"></div></div><div class="win-content-wrapper"><div class="classic-win"><div id="win-text" class="win-text">
-Excellent!
-</div><div class="daily-win-title">
-Congratulations!
-</div><div class="win-stats"><div class="win-stats-item hidden win-score"><div class="win-stats-label">
-Score
-</div><div class="win-stats-value score-value">00:00</div></div><div class="win-stats-item"><div class="win-stats-label">
-Difficulty
-</div><div class="win-difficulty win-stats-value"><span class="win-difficulty-value win-difficulty-easy">Easy</span><span class="win-difficulty-value win-difficulty-medium">Medium</span><span class="win-difficulty-value win-difficulty-hard">Hard</span><span class="win-difficulty-value win-difficulty-expert">Expert</span><span class="win-difficulty-value win-difficulty-evil">Master</span></div></div><div class="win-stats-item"><div class="win-stats-label">
-Time
-</div><div class="win-stats-value win-time-value">00:00</div></div></div></div></div><div class="win-banner"></div></div><div class="game-tip message" id="game-smart-message">
-Only <span id="percent-text"></span><span>%</span> of players were able to solve this puzzle!
-</div><div class="game-tip">
-Select a cell, then tap a number to fill in the cell
-</div><div id="sh-canvas" class="smart-hint_canvas"></div><div id="game" class="game"></div></div><div class="game-controls-wrapper show_control_before"><div class="smart-hint_carousel"><div class="smart-hint_carousel_name"></div><div class="smart-hint_carousel_desc"></div><div class="smart-hint_carousel_nav"><button class="sh-nav-button" left disabled><img src="/img/calendar-arrow-accent.svg" alt="arrow" /></button><button class="sh-nav-button" right><img src="/img/calendar-arrow-accent.svg" alt="arrow" /></button><button class="sh-nav-submit"><img src="/img/nav-submit-accent.svg" alt="arrow" /></button><div class="sh-nav-dots"></div></div></div><nav><div class="new-game-button-wrapper"><div id="new-game-button" class="button main-game-button new-game-button">New Game</div><div class="new-game-menu tab-classic"><div class="new-game-menu-content"><div class="new-game-menu-header">
-Select Game Mode
-</div><div class="new-game-menu-subheader">
-Current game progress will be lost
-</div><div class="new-game-menu-mode-buttons"><div class="new-game-menu-mode-button active" data-mode="classic">
-Classic
-</div><div class="new-game-menu-mode-button " data-mode="killer">
-Killer
-</div></div></div><div class="new-game-menu-content new-game-menu-classic"><div class="new-game-menu-difficulty-block"><a href="/easy/" id="link-easy-classic" class="new-game-menu-button" data-difficulty="easy" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Easy</span></a><a href="/medium/" id="link-medium-classic" class="new-game-menu-button" data-difficulty="medium" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Medium</span></a><a href="/hard/" id="link-hard-classic" class="new-game-menu-button" data-difficulty="hard" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Hard</span></a><a href="/expert/" id="link-expert-classic" class="new-game-menu-button" data-difficulty="expert" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Expert</span></a><a href="/evil/" id="link-evil-classic" class="new-game-menu-button" data-difficulty="evil" data-mode="classic"><span class="new-game-menu-icon icon-classic"></span><span>Master</span></a><div class="new-game-menu-button new-game-menu-restart"><span class="new-game-menu-icon icon-restart"></span><span>
-Restart
-</span></div></div></div><div class="new-game-menu-content new-game-menu-killer"><div class="new-game-menu-difficulty-block"><a href="/killer/easy/" id="link-easy-killer" class="new-game-menu-button" data-difficulty="easy" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Easy</span></a><a href="/killer/medium/" id="link-medium-killer" class="new-game-menu-button" data-difficulty="medium" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Medium</span></a><a href="/killer/hard/" id="link-hard-killer" class="new-game-menu-button" data-difficulty="hard" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Hard</span></a><a href="/killer/expert/" id="link-expert-killer" class="new-game-menu-button" data-difficulty="expert" data-mode="killer"><span class="new-game-menu-icon icon-killer"></span><span>Expert</span></a><div class="new-game-menu-button new-game-menu-restart"><span class="new-game-menu-icon icon-restart"></span><span>
-Restart
-</span></div></div></div><div class="new-game-menu-content new-game-menu-daily"><div class="new-game-menu-difficulty-block"><div class="new-game-menu-button new-game-menu-continue daily-continue"><span class="new-game-menu-icon icon-daily"></span><span>
-Continue
-</span></div><div class="new-game-menu-button new-game-menu-restart"><span class="new-game-menu-icon icon-restart"></span><span>
-Restart
-</span></div></div></div><div class="tooltip-arrow"></div></div></div><div id="game-controls" class="game-controls"><div ontouchstart class="game-controls-item-wrap"><div class="game-controls-item game-controls-undo" data-action="undo"><svg xmlns="http://www.w3.org/2000/svg" class="icon-game-control" viewBox="0 0 30 31"><path fill="#325aaf" d="M13.71 2.46a1 1 0 01.14 1.32l-.08.1-2.15 2.32 3.41.02a10 10 0 11-10 10 1 1 0 112 0 8 8 0 108.25-8h-.25l-3.48-.02 2.28 2.53a1 1 0 01.01 1.32l-.09.1a1 1 0 01-1.32 0l-.09-.08-3.76-4.18a1 1 0 01-.07-1.25l.08-.1 3.7-4.02a1 1 0 011.42-.06z" /></svg></div><div class="game-controls-label">
-Undo
-</div></div><div ontouchstart class="game-controls-item-wrap"><div class="game-controls-item game-controls-erase" data-action="erase"><svg xmlns="http://www.w3.org/2000/svg" class="icon-game-control" viewBox="0 0 30 31"><path fill="#325aaf" fill-rule="evenodd" d="M27.13 25.11a1 1 0 01.12 2h-6.9a1 1 0 01-.11-2H27.13zM21.48 4.08l.17.14.16.15 3.76 3.76a4 4 0 01.15 5.5l-.15.16-11.32 11.32h2.04a1 1 0 011 .89v.11a1 1 0 01-.88 1H6.52a3 3 0 01-1.98-.74l-.14-.14-2.23-2.22a4 4 0 01-.15-5.5l.15-.16L16.15 4.37a4 4 0 015.33-.29zm-11.52 9.3l-6.38 6.38a2 2 0 00-.11 2.7l.11.13 2.23 2.23a1 1 0 00.58.28l.13.01h4.9l5.13-5.13-6.59-6.6zm7.87-7.82l-.14.1-.13.13-6.18 6.18 6.59 6.6 6.19-6.2a2 2 0 00.11-2.7l-.11-.12-3.77-3.76a2 2 0 00-2.56-.22z" /></svg></div><div class="game-controls-label">
-Erase
-</div></div><div ontouchstart class="game-controls-item-wrap"><div class="game-controls-item game-controls-pencil" data-action="pencil"><svg xmlns="http://www.w3.org/2000/svg" class="icon-game-control " viewBox="0 0 30 31"><path fill="#325aaf" d="M25.43 4.76a5.42 5.42 0 01.19 7.52l-.18.2-13.5 13.48a.91.91 0 01-1.21.08l-.1-.08-5.07-5.08-.59 4.34 3.25-.44c.44-.05.84.2 1 .58l.03.11.02.11c.06.47-.24.91-.7 1.03l-.1.02-4.45.6a.94.94 0 01-.79-.27.92.92 0 01-.26-.65v-.13l1-7.4a.92.92 0 01.19-.44l.08-.09L17.71 4.76a5.45 5.45 0 017.72 0zm.35 20.08a1 1 0 110 2h-8.7a1 1 0 010-2h8.7zM21.4 10.18L9.43 22.13 11.3 24l11.95-11.95-1.86-1.86zm-3.23-3.23L6.2 18.91l1.92 1.91L20.07 8.86l-1.9-1.9zm3.42-1.93c-.69 0-1.35.2-1.92.56l-.15.1 5.01 5 .1-.14c.33-.5.51-1.09.55-1.7l.01-.22a3.58 3.58 0 00-3.6-3.6z" /></svg></div><div class="game-controls-label">
-Notes
-</div></div><div ontouchstart class="game-controls-item-wrap"><div class="game-controls-item game-controls-hint" data-action="hint"><svg xmlns="http://www.w3.org/2000/svg" class="icon-game-control " viewBox="0 0 30 31"><path fill="#325aaf" d="M17.3 25.91c.5 0 .91.48.91 1.08 0 .59-.4 1.07-.91 1.07h-4.6c-.5 0-.91-.48-.91-1.07 0-.6.4-1.08.91-1.08zM15 2.34a9.68 9.68 0 019.64 9.71c0 3.5-1.86 6.7-4.83 8.41-.23.14-.4.39-.5.82a3.21 3.21 0 01-3.13 2.5H13.5a3.21 3.21 0 01-3.17-2.68c-.08-.45-.17-.65-.12-.62a9.72 9.72 0 01-4.85-8.43c0-5.36 4.31-9.7 9.64-9.7zm0 2.15a7.53 7.53 0 00-7.5 7.56 7.57 7.57 0 003.78 6.57c.65.38.99 1.1 1.16 2.12.1.51.54.89 1.06.89h2.68c.5 0 .94-.35 1.05-.83.23-.98.73-1.73 1.5-2.19a7.57 7.57 0 003.77-6.56A7.53 7.53 0 0015 4.5z" /></svg><div class="game-controls-hint-label"></div></div><div class="game-controls-label">
-Hint
-</div></div><div id="promo-bubble" class="game-controls_promo-bubble">
-These hints explain solving methods that will help you improve your skills
-</div></div><div class="numpad-wrapper"><div id="numpad" class="numpad"><div class="numpad-item" data-value="1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 30.8"><path fill="currentColor" fill-rule="evenodd" d="M8.95 30V3.55H8.7c-.74.4-6.7 4.65-7.71 5.3V5.89c.63-.4 6.76-4.75 7.97-5.47h2.8V30h-2.8z" /></svg></div><div class="numpad-item" data-value="2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 31.4"><path fill="currentColor" fill-rule="evenodd" d="M.12 9.57C.16 4.47 4.06.79 9.41.79c5.2 0 9.19 3.57 9.19 8.23 0 3.07-1.42 5.47-6.28 10.66l-8 8.53v.25h15.02V31H.28v-1.97l10.34-11.18c4.12-4.43 5.17-6.19 5.17-8.73 0-3.3-2.81-5.87-6.44-5.87-3.82 0-6.46 2.59-6.5 6.32v.02H.12v-.02z" /></svg></div><div class="numpad-item" data-value="3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 32"><path fill="currentColor" fill-rule="evenodd" d="M6.7 16.93v-2.42h3.46c3.82 0 6.46-2.34 6.46-5.72 0-3.22-2.64-5.54-6.31-5.54-3.67 0-6.26 2.18-6.54 5.54H1.04c.33-4.84 4-8 9.37-8 5.04 0 9.06 3.4 9.06 7.67 0 3.57-2.05 6.17-5.5 6.93v.27c4.23.47 6.86 3.28 6.86 7.34 0 4.86-4.5 8.61-10.3 8.61-5.72 0-9.92-3.4-10.1-8.18h2.7c.25 3.33 3.32 5.72 7.38 5.72 4.29 0 7.43-2.64 7.43-6.21 0-3.71-2.92-6-7.65-6h-3.6z" /></svg></div><div class="numpad-item" data-value="4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 30.9"><path fill="currentColor" fill-rule="evenodd" d="M15.86 30v-6.69H.99v-2.56C3.63 16.28 7.29 10.6 14.56.37h4.02v20.42h4.43v2.52h-4.43V30h-2.73zM3.92 20.63v.18h11.94V3.05h-.19A206.36 206.36 0 003.92 20.63z" /></svg></div><div class="numpad-item" data-value="5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 31.4"><path fill="currentColor" fill-rule="evenodd" d="M10.55 30.61c-5.37 0-9.47-3.44-9.78-8.26h2.75c.3 3.32 3.32 5.78 7.05 5.78 4.33 0 7.43-3.1 7.43-7.44 0-4.35-3.1-7.45-7.36-7.45-2.92 0-5.5 1.42-6.75 3.7H1.22L2.82.4h16.14v2.52H5.04l-.99 10.79h.27c1.41-1.85 3.87-2.92 6.77-2.92 5.68 0 9.72 4.08 9.72 9.8 0 5.87-4.25 10.01-10.26 10.01z" /></svg></div><div class="numpad-item" data-value="6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 32"><path fill="currentColor" fill-rule="evenodd" d="M10.96 31.6c-4 0-7.15-2-9-5.65C.65 23.64 0 20.58 0 16.84-.01 6.76 4.13.79 11.17.79c4.9 0 8.61 2.96 9.45 7.57h-2.87c-.74-3.08-3.32-5.05-6.62-5.05-5.31 0-8.35 4.97-8.41 13.74h.25c1.29-3.32 4.55-5.45 8.43-5.45 5.61 0 9.76 4.18 9.76 9.84 0 5.89-4.29 10.15-10.2 10.15zm-.04-2.49c4.2 0 7.4-3.28 7.4-7.56 0-4.37-3.1-7.51-7.38-7.51a7.27 7.27 0 00-7.48 7.3c0 4.41 3.24 7.77 7.46 7.77z" /></svg></div><div class="numpad-item" data-value="7"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 30.8"><path fill="currentColor" fill-rule="evenodd" d="M3.02 30L16.7 3.16v-.23H.29V.41h19.28v2.62L6 30z" /></svg></div><div class="numpad-item" data-value="8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 32"><path fill="currentColor" fill-rule="evenodd" d="M10.53 31.61C4.34 31.61.05 28.1.05 23.02a7.55 7.55 0 016.46-7.57v-.24a6.63 6.63 0 01-5.3-6.58C1.2 4.05 5.07.79 10.52.79c5.46 0 9.33 3.24 9.33 7.84 0 3.22-2.07 5.8-5.29 6.58v.24a7.57 7.57 0 016.46 7.57c0 5.09-4.28 8.6-10.5 8.6zm0-2.42c4.54 0 7.67-2.6 7.67-6.35 0-3.67-3.11-6.17-7.67-6.17-4.53 0-7.65 2.52-7.65 6.17 0 3.75 3.12 6.36 7.65 6.36zm0-14.95c3.9 0 6.57-2.17 6.57-5.39 0-3.34-2.67-5.64-6.57-5.64-3.9 0-6.56 2.3-6.56 5.64 0 3.2 2.67 5.4 6.56 5.4z" /></svg></div><div class="numpad-item" data-value="9"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 32"><path fill="currentColor" fill-rule="evenodd" d="M10.9 31.6c-4.99 0-8.62-2.98-9.46-7.55h2.87c.72 3.01 3.22 5.04 6.63 5.04 5.23 0 8.2-4.78 8.4-13.06.03-.2-.1-.47-.12-.68h-.12c-1.27 3.26-4.55 5.44-8.43 5.44-5.66 0-9.76-4.17-9.76-9.8C.91 5.1 5.17.78 11.11.78c4 0 7.15 2.01 9 5.68 1.3 2.3 1.96 5.33 1.96 9.1 0 10.04-4.1 16.02-11.17 16.02zm.22-13.25c4.25 0 7.49-3.2 7.49-7.28 0-4.4-3.22-7.8-7.47-7.8-4.22 0-7.4 3.3-7.4 7.63 0 4.29 3.04 7.45 7.38 7.45z" /></svg></div></div></div><div class="check-mistakes-wrapper hide"><label class="check-mistakes"><span class="label-text">
-Auto-Check for Mistakes
-</span><span class="switch check-mistakes-switch active"><input class="checkMistakes" type="checkbox" checked /><span class="switch-pin"><div class="icon-check-mistakes"></div></span></span></label></div></nav></div></div></div><div id="rise-player" class="is-block"></div><div id="div-gpt-ad-1634890953983-0" class="horizontal-placeholder" style><script>
-                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1634890953983-0'); });
-            </script></div><div id="tips-articles-wrap"><div class="app-teaser-wrapper" data-mode="classic"><div class="app-teaser clearfix"><img class="app-icon" srcset="/img/icon-app.png 1x,
-                                     /img/icon-app@2x.png 2x" src="/img/icon-app.png" alt="sudoku app icon" /><div class="app-info"><div class="app-info-heading">Sudoku.com - Number Games</div><div class="app-info-author">Easybrain</div><div class="app-info-rating"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-half"></i></div></div></div><div class="app-teaser-buttons"><a href="https://app.adjust.com/4j48k9v" title="Get it on Google Play" class="app-teaser-button button-google-play badge-button-gp"><div class="google-play-badge"></div></a><a href="https://app.adjust.com/ver8rks" title="Download on the App Store" class="app-teaser-button button-app-store badge-button-ios"><div class="app-store-badge"></div></a></div></div><div class="article-wrapper"><div class="post"><h1 class="entry-title">Play Free Sudoku Now!</h1><div class="entry-content"><p>Sudoku is one of the most popular puzzle games of all time. The goal of Sudoku is to fill a 9×9 grid with numbers so that each row, column and 3×3 section contain all of the digits between 1 and 9. As a logic puzzle, Sudoku is also an excellent brain game. If you play <a href="/challenges/daily-sudoku">Sudoku daily</a>, you will soon start to see improvements in your concentration and overall brain power. Start a game now. Within no time <a href="https://play.google.com/store/apps/details?id=com.easybrain.sudoku.android&amp;hl=en_US">Sudoku free puzzles</a> will be your favorite online game.</p></div></div><div class="post"><h2 class="entry-title">About Sudoku</h2><div class="entry-content"><p>The popular Japanese puzzle game Sudoku is based on the logical placement of numbers. An online game of logic, Sudoku doesn’t require any calculation nor special math skills; all that is needed are brains and concentration.</p></div></div><div class="post"><h2 class="entry-title">How to play Sudoku</h2><div class="entry-content"><p>The goal of Sudoku is to fill in a 9×9 grid with digits so that each column, row, and 3×3 section contain the numbers between 1 to 9. At the beginning of the game, the 9×9 grid will have some of the squares filled in. Your job is to use logic to fill in the missing digits and complete the grid. Don’t forget, a move is incorrect if:</p><ul><li>Any row contains more than one of the same number from 1 to 9</li><li>Any column contains more than one of the same number from 1 to 9</li><li>Any 3×3 grid contains more than one of the same number from 1 to 9</li></ul></div></div><div class="post"><h3 class="entry-title">Sudoku Tips</h3><div class="entry-content"><p>Sudoku is a fun puzzle game once you get the hang of it. At the same time, learning to play Sudoku can be a bit intimidating for beginners. So, if you are a complete beginner, here are a few Sudoku tips that you can use to improve your Sudoku skills.</p><ul><li>Tip 1: Look for rows, columns of 3×3 sections that contain 5 or more numbers. Work through the remaining empty cells, trying the numbers that have not been used. In many cases, you will find numbers that can only be placed in one position considering the other numbers that are already in its row, column, and 3×3 grid.</li><li>Tip 2: Break the grid up visually into 3 columns and 3 rows. Each large column will have 3, 3×3 grids and each row will have 3, 3×3 grids. Now, look for columns or grids that have 2 of the same number. Logically, there must be a 3rd copy of the same number in the only remaining 9-cell section. Look at each of the remaining 9 positions and see if you can find the location of the missing number.</li></ul><p>Now that you know a little more about Sudoku, play and enjoy this free online game.</p></div></div><div class="post"><h4 class="entry-title">About Easybrain</h4><div class="entry-content"><p>Easybrain is a mobile games publisher with one of the most popular Sudoku apps on the <a href="https://apps.apple.com/us/app/sudoku-com-sudoku-puzzle/id1193508329">App Store</a> and <a href="https://play.google.com/store/apps/details?hl=en&amp;id=com.easybrain.sudoku.android">Google Play</a>, and from August 2018 is the proud owner of the Sudoku.com website.</p></div></div></div></div></div><aside id="aside" class="aside" role="complementary"><div id="div-gpt-ad-1634891177200-0" class="aside-placeholder" style><script>
-                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1634891177200-0'); });
-            </script></div><div id="div-gpt-ad-1656502141840-0" class="aside-placeholder" style><script>
-                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1656502141840-0'); });
-            </script></div><div class="sky-ads"><div id="div-gpt-ad-1656502856214-0" class="skyscraper-placeholder" style><script>
-                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1656502856214-0'); });
-            </script></div></div><div class="app-teaser-wrapper" data-mode="classic"><div class="app-teaser clearfix"><img class="app-icon" srcset="/img/icon-app.png 1x,
-                                     /img/icon-app@2x.png 2x" src="/img/icon-app.png" alt="sudoku app icon" /><div class="app-info"><div class="app-info-heading">Sudoku.com - Number Games</div><div class="app-info-author">Easybrain</div><div class="app-info-rating"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-half"></i></div></div></div><div class="app-teaser-buttons"><a href="https://app.adjust.com/4j48k9v" title="Get it on Google Play" class="app-teaser-button button-google-play badge-button-gp"><div class="google-play-badge"></div></a><a href="https://app.adjust.com/ver8rks" title="Download on the App Store" class="app-teaser-button button-app-store badge-button-ios"><div class="app-store-badge"></div></a></div></div></aside><button class="footer-anchor" data-scrollTop></button></div><footer class="ref-footer" role="contentinfo"><section class="ref-footer_top"><div class="container"><div class="ref-footer_top_content"><a href="https://www.easybrain.com" class="easy-brain" target="_blank"><div class="logo-easybrain"></div><div class="copyright">
-&copy;2018-2024 Easybrain. All Rights Reserved.
-</div></a><div class="links"><div class="links_col"><div class="links_item home-footer-link"><a href="/">
-Home
-</a></div><div class="links_item dc-footer-link"><a href="/challenges">
-Daily Challenge
-</a></div><div class="links_item awards-footer-link"><a href="/awards">
-Awards
-</a></div></div><div class="links_col"><div class="links_item rules-footer-link"><a href="/sudoku-rules/">
-Rules
-</a></div><div class="links_item tips-footer-link"><a href="/how-to-play/">
-Tips
-</a></div><div class="links_item form-footer-link"><a href="/get-in-touch" title="Get in Touch">Get in Touch</a></div></div><div class="links_col"><div class="links_item printable-footer-link"><a href="/sudoku-printable">
-Printable Sudoku
-</a></div><div class="links_item solver-footer-link"><a href="/sudoku-solver">
-Solver
-</a></div></div></div><div class="lang-soc"><div class="lang-menu"><div class="lang-menu_label"><div class="icon-flag flag-en"></div><div class="language">English</div><div class="arrow"></div><select class="lang-menu_select"><option value="/" selected>
-English
-</option><option value="/jp">
-日本語
-</option><option value="/it">
-Italiano
-</option><option value="/zh">
-中文
-</option><option value="/de">
-Deutsch
-</option><option value="/fr">
-Français
-</option><option value="/es">
-Español
-</option><option value="/pt">
-Português
-</option><option value="/tr">
-Türk
-</option><option value="/pl">
-Polski
-</option><option value="/ko">
-한국인
-</option><option value="/th">
-ไทย
-</option><option value="/vi">
-Tiếng Việt
-</option><option value="/ar">
-عربى
-</option><option value="/mx">
-Español (México)
-</option><option value="/br">
-Português (Brasil)
-</option><option value="/tw">
-中文（T）
-</option><option value="/ru">
-Русский
-</option></select></div><div class="lang-menu_dropdown"><ul><li class="lang-menu-item"><a href="/" title="English"><div class="icon-flag flag-en"></div><span>English</span></a></li><li class="lang-menu-item"><a href="/jp" title="日本語"><div class="icon-flag flag-jp"></div><span>日本語</span></a></li><li class="lang-menu-item"><a href="/it" title="Italiano"><div class="icon-flag flag-it"></div><span>Italiano</span></a></li><li class="lang-menu-item"><a href="/zh" title="中文"><div class="icon-flag flag-zh"></div><span>中文</span></a></li><li class="lang-menu-item"><a href="/de" title="Deutsch"><div class="icon-flag flag-de"></div><span>Deutsch</span></a></li><li class="lang-menu-item"><a href="/fr" title="Français"><div class="icon-flag flag-fr"></div><span>Français</span></a></li><li class="lang-menu-item"><a href="/es" title="Español"><div class="icon-flag flag-es"></div><span>Español</span></a></li><li class="lang-menu-item"><a href="/pt" title="Português"><div class="icon-flag flag-pt"></div><span>Português</span></a></li><li class="lang-menu-item"><a href="/tr" title="Türk"><div class="icon-flag flag-tr"></div><span>Türk</span></a></li><li class="lang-menu-item"><a href="/pl" title="Polski"><div class="icon-flag flag-pl"></div><span>Polski</span></a></li><li class="lang-menu-item"><a href="/ko" title="한국인"><div class="icon-flag flag-ko"></div><span>한국인</span></a></li><li class="lang-menu-item"><a href="/th" title="ไทย"><div class="icon-flag flag-th"></div><span>ไทย</span></a></li><li class="lang-menu-item"><a href="/vi" title="Tiếng Việt"><div class="icon-flag flag-vi"></div><span>Tiếng Việt</span></a></li><li class="lang-menu-item"><a href="/ar" title="عربى"><div class="icon-flag flag-ar"></div><span>عربى</span></a></li><li class="lang-menu-item"><a href="/mx" title="Español (México)"><div class="icon-flag flag-mx"></div><span>Español (México)</span></a></li><li class="lang-menu-item"><a href="/br" title="Português (Brasil)"><div class="icon-flag flag-br"></div><span>Português (Brasil)</span></a></li><li class="lang-menu-item"><a href="/tw" title="中文（T）"><div class="icon-flag flag-tw"></div><span>中文（T）</span></a></li><li class="lang-menu-item"><a href="/ru" title="Русский"><div class="icon-flag flag-ru"></div><span>Русский</span></a></li></ul></div></div><a class="facebook" href="https://www.facebook.com/sudoku.easybrain/" rel="noreferrer noopener" title="Follow us on Facebook" target="_blank"><svg class="icon icon-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"><g fill="none" fill-rule="evenodd"><rect width="35" height="35" fill="#1877F2" rx="17.5" /><path fill="#FFF" fill-rule="nonzero" d="M13.28 18.62h1.94v7.3c0 .14.12.26.28.26h3.28c.16 0 .28-.11.28-.26v-7.27h2.23c.14 0 .26-.1.28-.23l.34-2.69a.24.24 0 00-.07-.2.3.3 0 00-.21-.09h-2.56v-1.68c0-.51.3-.77.88-.77h1.68c.15 0 .28-.12.28-.26v-2.47c0-.14-.13-.26-.28-.26h-2.41c-.4 0-1.8.07-2.9 1a2.64 2.64 0 00-1 2.47v1.97h-2.04c-.15 0-.28.12-.28.26v2.66c0 .14.13.26.28.26z" /></g></svg></a></div></div></div></section><section class="ref-footer_bottom"><div class="container"><div class="ref-footer_bottom_content"><div class="disclaimer">
-Apple, the Apple logo, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.
-</div><div class="policy-links"><a class="hover-link" href="https://easybrain.com/terms" title="Terms" target="_blank">Terms</a><a class="hover-link" href="/page/cookies-eu/" title="Cookie Policy">Cookie Policy</a><a class="hover-link" href="https://easybrain.com/privacy" title="Privacy" target="_blank">Privacy</a><a class="hover-link cookie-preferences-link" href="#show-cookie-preferences">Cookie Preferences</a></div></div></div></section></footer><div id="cookies-consent" class="hidden"><div class="cookies-overlay"></div><div class="cookies-banner" id="cookies-banner"><div class="banner-container"><div class="buttons"><div id="banner-accept" class="cookies-btn-action cookies-accept">Accept</div><div id="cookie-settings-link" class="cookies-btn-action" title="Cookie settings">Cookie Preferences</div></div><p>
-We and our partners store and/or access information (including personal data such as device
-identifiers in cookies) on your device to provide, measure, analyze, improve our services and
-personalize ads and content. You may accept or manage your preferences by clicking above,
-including your right to object where legitimate interest is used. For more information or to
-change your preferences at any time go to the
-<a href="/page/cookies-eu/" title="Cookie Policy">Cookie Policy</a>.
-</p></div></div><div id="cookies-popup" class="cookies-popup"><div class="popup-content"><div class="popup-content__top"><div>Cookie preferences</div><div class="popup-close icon-close" id="cookies-popup-close"></div></div><div class="popup-content__options"><ul id="cookies-options" class="options-list"><li data-category="about" class="cookies-options-item active">About Cookies</li><li data-category="necessary" class="cookies-options-item">Strictly Necessary Cookies</li><li data-category="analytics" class="cookies-options-item">Analytics Cookies</li><li data-category="advertising" class="cookies-options-item">Advertising and Measurement Cookies</li><li data-category="info" class="cookies-options-item">More Information</li></ul><div class="options-dropdown"><select id="cookies-options-dropdown"><option value="about">About Cookies</option><option value="necessary">Strictly Necessary Cookies</option><option value="analytics">Analytics Cookies</option><option value="advertising">Advertising and Measurement Cookies</option><option value="info">More Information</option></select></div><div class="options-content-wrapper"><div class="options-content cookies-category-about"><div class="content-head"><div>About Cookies</div></div><p>Cookies are small pieces of text sent to your web browser that assist us in
-providing our Services according to the purposes described. A cookie file is
-stored in your web browser and allows our Services or a third-party to recognize
-you and make your next visit easier and the Service more useful to you. Some of
-the purposes for which Cookies are installed may also require the User's
-consent.</p><p>Cookies can be "persistent" or "session" cookies. Persistent cookies remain on
-your personal computer or mobile device when you go offline, while session
-cookies are deleted as soon as you close your web browser.</p></div><div class="options-content cookies-category-necessary"><div class="content-head"><div>Strictly Necessary Cookies</div></div><p>Strictly necessary cookies are set to recognise you when you return to our Website,
-set up your consent settings, and embed functionality
-from third party services. Also, these cookies enable us to
-personalise our content for you and remember your last game progress. These
-cookies are necessary for the functionality of the Website. You may set your
-browser to block these cookies, but the Website will not function properly
-without them.</p><div><div>Cookies Used</div><ul><li>Session Cookies</li><li>Consent Cookies</li><li>YouTube Cookies</li><li>Google reCaptcha</li><li>Cloudflare Load Balancer</li></ul></div></div><div class="options-content cookies-category-analytics"><div class="content-head"><div>Analytics Cookies</div><label class="switch" style><input type="checkbox" name="analytics" id="sdk_google_analytics"><span class="checkbox-icon"></span></label></div><p>We may use analytics cookies to track information on how the Website is used so that
-we can make improvements. We may also use analytics cookies to test new
-advertisements, pages, features or new functionality of the Website to see how
-our users react to them.</p><div><div>Cookies Used</div><ul><li>Google Analytics</li><li class="cookies-used-link"><a href="https://policies.google.com/privacy?hl=en" rel="noreferrer noopener" target="_blank">https://policies.google.com/privacy?hl=en</a></li></ul></div></div><div class="options-content cookies-category-advertising"><div class="content-head"><div>Advertising and Measurement Cookies</div><label class="switch" style><input type="checkbox" name="sdk_google_adw" id="sdk_google_adw"><span class="checkbox-icon"></span></label></div><p>These types of cookies and other storage technologies such as Pixel Tags are used to
-deliver advertisements on and through the Service and track the performance of these
-advertisements. To this end, we may share information about your use of our site with
-our trusted social media and advertising partners. These cookies may also be used to
-enable third-parties, including social media and advertising networks to provide
-measurement services and deliver ads that may be relevant to you based upon your
-activities or interests.
-</p><div><div>Cookies Used</div><ul><li>AdSense by Google and their partners</li><li class="cookies-used-link"><a href="http://www.google.com/policies/privacy/" rel="noreferrer noopener" target="_blank">http://www.google.com/policies/privacy/</a></li><li class="cookies-used-link"><a href="https://support.google.com/adsense/answer/9012903?hl=en-GB&ref_topic=7670012" rel="noreferrer noopener" target="_blank">https://support.google.com/adsense/answer/9012903?hl=en-GB&ref_topic=7670012</a></li><br/><li>Ad Manager by Google Ireland Limited</li><li class="cookies-used-link"><a href="https://policies.google.com/privacy" rel="noreferrer noopener" target="_blank">https://policies.google.com/privacy</a></li><br/><li>Facebook Pixel by Facebook Ireland Limited</li><li class="cookies-used-link"><a href="https://www.facebook.com/policies/cookies" rel="noreferrer noopener" target="_blank">https://www.facebook.com/policies/cookies</a></li><br/><li>Index Exchange by Index Exchange Inc.</li><li class="cookies-used-link"><a href="https://www.indexexchange.com/privacy/" rel="noreferrer noopener" target="_blank">https://www.indexexchange.com/privacy</a></li><br/><li>OpenX by OpenX Software Ltd (US)</li><li class="cookies-used-link"><a href="https://www.openx.com/legal/privacy-policy/" rel="noreferrer noopener" target="_blank">https://www.openx.com/legal/privacy-policy/</a></li><br/><li>PubMatic by PubMatic, Inc. (US)</li><li class="cookies-used-link"><a href="https://pubmatic.com/legal/privacy-policy/" rel="noreferrer noopener" target="_blank">https://pubmatic.com/legal/privacy-policy/</a></li><br/><li>Rise Engage byTypeA Holdings Ltd.</li><li class="cookies-used-link"><a href="https://risecodes.com/video-advertisement-player-privacy-policy/" rel="noreferrer noopener" target="_blank">https://risecodes.com/video-advertisement-player-privacy-policy/</a></li><br/><li>Rubicon Project by Magnite Inc. (US)</li><li class="cookies-used-link"><a href="https://www.magnite.com/legal/advertising-technology-privacy-policy/" rel="noreferrer noopener" target="_blank">https://www.magnite.com/legal/advertising-technology-privacy-policy/</a></li><br/><li>Yieldmo by Yieldmo, Inc.</li><li class="cookies-used-link"><a href="https://www.yieldmo.com/privacy-policy/" rel="noreferrer noopener" target="_blank">https://www.yieldmo.com/privacy-policy/</a></li><br/><li>Amazon by Amazon.com, Inc.</li><li class="cookies-used-link"><a href="https://aws.amazon.com/privacy/" rel="noreferrer noopener" target="_blank">https://aws.amazon.com/privacy/</a></li><br/><li>TripleLift by Triple Lift, Inc.</li><li class="cookies-used-link"><a href="https://triplelift.com/privacy/" rel="noreferrer noopener" target="_blank">https://triplelift.com/privacy/</a></li><br/><li>Smart by EQUATIV (France)</li><li class="cookies-used-link"><a href="https://smartadserver.com/end-user-privacy-policy/" rel="noreferrer noopener" target="_blank">https://smartadserver.com/end-user-privacy-policy/</a></li><br/><li>Smaato by Smaato, Inc. (US)</li><li class="cookies-used-link"><a href="https://www.smaato.com/privacy/" rel="noreferrer noopener" target="_blank">https://www.smaato.com/privacy/</a></li><br/><li>LoopMe LoopMe Limited (UK).</li><li class="cookies-used-link"><a href="https://legal.loopme.com/privacy-center#contract-hyartvn1o" rel="noreferrer noopener" target="_blank">https://legal.loopme.com/privacy-center#contract-hyartvn1o</a></li><br/><li>Xandr by Xandr,Inc. (USA)</li><li class="cookies-used-link"><a href="https://about.ads.microsoft.com/en-us/solutions/xandr/platform-privacy-policy" rel="noreferrer noopener" target="_blank">https://about.ads.microsoft.com/en-us/solutions/xandr/platform-privacy-policy</a></li><br/><li>TAPPX by TAPPCELERATOR MEDIA, S.L (Spain)</li><li class="cookies-used-link"><a href="https://www.tappx.com/legal/privacy-policy" rel="noreferrer noopener" target="_blank">https://www.tappx.com/legal/privacy-policy</a></li><br/><li>Minute Media by Pro Sportority Ltd (Israel)</li><li class="cookies-used-link"><a href="https://www.minutemedia.com/policies/privacy-policy" rel="noreferrer noopener" target="_blank">https://www.minutemedia.com/policies/privacy-policy</a></li><br/><li>Sharethrough by Sharethrough Inc (Canada)</li><li class="cookies-used-link"><a href="https://www.sharethrough.com/privacy-center/consumer-privacy-notice" rel="noreferrer noopener" target="_blank">https://www.sharethrough.com/privacy-center/consumer-privacy-notice</a></li><br/><li>Vidazoo by Vidazoo Ltd. (Israel)</li><li class="cookies-used-link"><a href="https://vidazoo.gitbook.io/vidazoo-legal/privacy-policy" rel="noreferrer noopener" target="_blank">https://vidazoo.gitbook.io/vidazoo-legal/privacy-policy</a></li><br/><li>Aniview by Aniview Ltd (Israel)</li><li class="cookies-used-link"><a href="https://aniview.com/privacy-policy/" rel="noreferrer noopener" target="_blank">https://aniview.com/privacy-policy/</a></li><br/><li>Media.net by Media.net Advertising FZ-LLC (UAE)</li><li class="cookies-used-link"><a href="https://www.media.net/privacy-policy/" rel="noreferrer noopener" target="_blank">https://www.media.net/privacy-policy/</a></li></ul></div></div><div class="options-content cookies-category-info"><div class="content-head"><div>More Information</div></div><p>Please <a href="/page/cookies-eu/" title="Cookie Policy">click here</a> to
-learn more about the cookies we use
-on our Website.</p></div></div></div><div class="popup-content__bottom"><div class="cookies-btn-link" id="cookies-save">Save</div><div class="cookies-btn-link cookies-btn-action cookies-accept" id="cookies-accept-all">
-Accept all and Continue
-</div></div></div></div></div><div id="smart-wrap"></div><script src="/build/ref-game.78c05bef.js"></script><script>
-    !function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('consent', 'revoke');
-    fbq('init', '633344124170585');
-    fbq('track', 'PageView');
-</script></body></html>
+<div class="InsideBar">
+<img class="HeadingImage" style="width:60px;height:40px;" src='Pics/welcomegreen.JPG'>
+<h6>Welcome our latest Members</h6>
+<p id="dLatestMemberMsg"><a class='Link11' href='UserPage.aspx?Go=E21-9-1941&UID=82639'>peevee</b></a> from Australia<br><a class='Link11' href='UserPage.aspx?Go=E22-9-1941&UID=82631'>61Bruce61</b></a> from UK<br><a class='Link11' href='UserPage.aspx?Go=E23-9-1941&UID=82623'>Hermes3M</b></a> from Mérida Yucatán</p>
+</div>
+<div class="InsideBar">
+<img class="HeadingImage" style="width:60px;height:26px;" src='Pics/happybday.jpg'>
+<h6>Members' Birthdays Today</h6>
+<p id="dBirthdayMsg">None Today.</p>
+</div>
+<div class="InsideBar">
+<img class="HeadingImage" style="width:60px;height:23px;" src='Pics/FriendsOnline.jpg'>
+<h6>Friends currently online</h6>
+<div id="dFriendsOnline" style="padding-top:2px">Want to see when your friends are online? <a class='CommentPageLink' href='UserDetails.aspx?t=tell'>Become a member</a> for free.</div>
+</div>
+<div class="InsideBar">
+<div style='width:100%;padding-left:10px;padding-right:10px'>
+<H2>Sites we Like</H2>
+<div class="dNS"><a class="Link11" href="https://iknowthepilot.com.au">I Know The Pilot</a> Travel Deals</div>
+<div class="dNS"><a class="Link11" href="https://iwantthatflight.com.au">I Want That Flight</a> finds you cheap flights</div>
+<div class="dNS"><a class="Link11" href="https://freecrosswordpuzzles.com.au">Free Crossword Puzzles</a> Play online or print them out. 2 new crosswords daily.</div>
+<div class="dNS"><a class="Link11" href="https://jigsawonline.net">Jigsaw Puzzles</a> Play online jigsaw puzzles for free, with new pictures everyday</div>
+<div class="dNS"><a class="Link11" href="https://slidingpuzzle.net">Sliding Puzzle</a> Play online with your own photos</div>
+<div class="dNS"><a class="Link11" href="https://flickrsudoku.com">Flickr Sudoku</a> Play sudoku with pictures from Flickr</div>
+<div class="dNS"><a class="Link11" href="https://kakuro.cc">Kakuro</a> Play Kakuro online!</div>
+<div class="dNS"><a class="Link11" href="https://wordoku.biz">Wordoku</a> Free Wordoku puzzles everyday.</div>
+<div class="dNS"><a class="Link11" href="https://housecareguide.com">House Care Guide</a> Home renovation Tips</div>
+<div class="dNS"><a class="Link11" href="https://coolmusiccodes.com">Cool Music Codes</a> Roblox Song IDs</div>
+<div class="dNS"><a class="Link11" href="https://playercountstats.com/">Player Count Stats</a> Steam Player Counts</div>
+<div class="dNS"><a class="Link11" href="https://www.pumpkin-carving-pattern.com">Pumpkin Carving Pattern</a> Free halloween pumpkin carving patterns.</div>
+</div>
+</div>
+</aside>
+</div> <!-- close the central row -->
+</main><!-- close the main section -->
+<footer class="page-footer font-small pt-4 pb-4">
+  <ul class="list-unstyled">
+    <li><a rel='nofollow' href='/privacypolicy.aspx'>Privacy</a></li>
+    <li><a rel='nofollow' href='/Termsofuse.aspx'>Terms of Use</a></li>
+    <li><a rel='nofollow' href='/sitemap.aspx'>Sitemap</a></li>
+  </ul>
+</footer>
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-233215-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-233215-1');
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="/includes/sudoku.js?v=2"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAp4GdQ3js1gddcenV3Vc+eHZKRHIUAJnrFn52TQ1ywCM7yz4SUM75rkIud8LHfot0gHE+sHGp9NDaqQIDYjRQZgbl0kRvv8xjjMgnBlrXGGJgmJklfDm0qrzcLD2mB4xBDYBU7UZjhrLAgyVY3uoSOhhjkV9KPoHlqcV9Vv0itXpDPNRNeqw86u/aMNYbghU04tjgUvLIvBdiQX19f9pKb9kCmrBHt/e9nPmqQL20bgcB6aCySOn7J+ViI7PTtCrSw=" /></form>
+</body>
+</html>
