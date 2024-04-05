@@ -1,0 +1,11 @@
+.topbar {
+    width: 100%;
+    border: 4px solid lightslategray;
+    background-color: silver;
+    text-align: center;
+}
+
+.links {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
