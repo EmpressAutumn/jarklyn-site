@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <title>Dev Notes | Atom596.com</title>
     <script type="text/javascript" src="/script/topbar.js"></script>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <script>
+        latest = "latest"
+        window.addEventListener("load", function() {
+            document.getElementById("article").src = latest + ".md"
+        })
+    </script>
     <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/devnotes.css">
 </head>
 <body>
     <h1>Dev Notes</h1>
     <div id="topbar"></div>
+    <div class="article"><md-block id="article"></md-block></div>
 </body>
 </html>
