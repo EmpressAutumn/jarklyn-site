@@ -1,9 +1,10 @@
 h1 {
     text-align: center;
+    color:palegoldenrod;
 }
 
 body {
-    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/fancy-cushion.pngflower.png");
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/fancy-cushion.png");
     background-repeat: repeat;
     font-family: Cambria, serif;
 }
