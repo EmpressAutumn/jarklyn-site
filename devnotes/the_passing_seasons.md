@@ -1,6 +1,7 @@
-[//]: # (Title: The Passing Seasons)
-[//]: # (Author: Autumn Hoffensetz)
-[//]: # (Date: 21 September 2023)
+[//]: # (title: "The Passing Seasons")
+[//]: # (author: "Autumn Hoffensetz")
+[//]: # (date: "21 September 2023")
+[//]: # (tags: "blog, reflection, sincerity")
 
 It's that time of year again. The first leaves are starting to turn orange and red, and some have even begun to litter the ground. Yes, autumn is only a mere two days away.
 
