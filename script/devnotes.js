@@ -6,12 +6,11 @@ window.addEventListener("load", async function () {
         })
         .then(articles => {
             const latest = Object.keys(articles)[0];
-            const file = fetch(urlArticle + ".md");
             if (urlArticle === null) {
                 const url = new URL(window.location);
                 url.searchParams.append("note", latest);
                 window.location.replace(url);
-            } else if (file.status === 404) {
+            } else if (!Object.keys(articles).includes(urlArticle)) {
                 const url = new URL(window.location);
                 url.searchParams.set("note", latest);
                 window.location.replace(url);
@@ -21,7 +20,6 @@ window.addEventListener("load", async function () {
                 document.getElementById("author-date").innerText = articles[urlArticle].author + " | " + articles[urlArticle].date;
                 document.getElementById("tags").innerText = articles[urlArticle].tags;
                 Object.keys(articles).forEach(article => {
-                    console.log(Object.keys(articles))
                     let title;
                     if (article === urlArticle) {
                         let t = articles[article].title;
