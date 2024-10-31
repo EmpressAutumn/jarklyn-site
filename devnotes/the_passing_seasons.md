@@ -1,8 +1,3 @@
-[//]: # (title: "The Passing Seasons")
-[//]: # (author: "Autumn Hoffensetz")
-[//]: # (date: "21 September 2023")
-[//]: # (tags: "blog, reflection, sincerity")
-
 It's that time of year again. The first leaves are starting to turn orange and red, and some have even begun to litter the ground. Yes, autumn is only a mere two days away.
 
 Autumn has always been my favorite time of the year. Clearly, I like this season, seeing as I named myself after it. There are so many things I find special about these coming months. There's the cool and calm weather, the seasonal food, and the holidays, which combine to create an autumnal feeling. These are fairly universal experiences, however, and I know my love of the autumnal season stems from things more personal. I will discuss my personal connections to the season of autumn.
