@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
 function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
+    if (parts.length === 2) return parts.pop().split(";").shift();
 }
 
 function setCookie(name, value, days) {
@@ -32,7 +32,7 @@ function toggleMode() {
 
 function applyTheme() {
     const theme = getCookie("theme") || "light";
-    const themeCss = document.getElementById('theme-css');
+    const themeCss = document.getElementById("theme-css");
     themeCss.href = "/style/" + theme + ".css";
 }
 
